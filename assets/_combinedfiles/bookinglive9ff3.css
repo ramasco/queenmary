@@ -1,0 +1,2785 @@
+/****** FILE: mysite/css/booking-process.css *****/
+/* = Form Fields
+---------------- */
+textarea:invalid, input:invalid, select:invalid {
+	border: 1px solid rgba(231, 76, 60, 0.65) !important;
+}
+
+.hidden {
+    display: none;
+}
+.behidden {
+    display: none !important;
+}
+
+div.field {
+    margin: 10px 0 15px;
+}
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+form label {
+    margin-bottom: 10px;
+}
+form label.left {
+    display: block;
+    font-weight: bold;
+}
+form label.right {
+	font-weight:bold;
+}
+.ui-button-text-only .ui-button-text {
+    padding:0px !important;
+}
+.ui-dialog .VoucherValue {
+    font-size:34px;
+    text-align:center;
+    margin-bottom:10px;
+}
+.ui-dialog .VoucherDescription {
+    text-align: center;
+    font-size: 14px;
+}
+form input.text,
+form textarea,
+form .textajaxuniquetext,   /* Not sure if this is used? */
+form select {
+    width: 100%;
+    max-width: 282px;
+    padding: 6px 5px;
+    font-size: 15px;
+    background-color: #fff;
+    border: 1px solid #dad9d9;
+	margin: 3px;
+	box-sizing: border-box;
+}
+form input.text.showhelptext,
+form textarea.showhelptext,
+form .textajaxuniquetext.showhelptext,   /* Not sure if this is used? */
+form select.showhelptext {
+    max-width: 258px;
+}
+
+form select[disabled] {
+    background-color: black;
+}
+
+form input[readonly],
+form input[disabled],
+form select[disabled],
+form textarea[disabled] {
+    color: #555;
+	background-color: #dad9d9;
+}
+form select {
+	padding:5px;
+}
+
+.ie7 form select { width: 200px; } /* fix for ie7's rendering of max-width property on select input */
+
+form input.text:focus,form textarea:focus,
+form .textajaxuniquetext:focus,
+form select:focus {
+    outline:none;
+}
+textarea {
+    resize: vertical; /* forces text area to be resized vertically only */
+}
+
+
+/* Radio and Checkbox */
+.field .checkbox, .field .radio {
+    float: left;
+    width: 13px;
+    margin-right: 6px;
+    margin-top: 3px;
+    padding: 0;
+}
+.checkbox label.right,
+.radio label.right {
+    float: left;
+}
+
+#SMSNotification label
+{
+	width:auto !important;
+}
+
+/* Messages */
+form .message {
+    background-color: #fef4ba;
+    padding: 5px 10px;
+    border: 1px solid #e8c805;
+    border-radius: 3px;
+    clear: both;
+    display: block;
+}
+form .good {
+    background-color: #ecf9d0;
+    border-color: #8fbe00;
+}
+form .bad, form .required {
+    background-color: #f9d0d0;
+    border-color: #cf0000;
+    color: #b80000;
+}
+
+/* ACTIONS */
+.Actions {
+    margin-bottom: 20px;
+}
+
+#Form_PromoCodeForm .Actions {
+    margin-bottom: 20px;
+    margin-top: 44px;
+    float: left;
+}
+.participant_lookup {
+    margin-top:10px;
+}
+@media screen and (max-width: 665px) {
+    #Form_PromoCodeForm .Actions {
+        margin-bottom: 20px;
+        margin-top: -10px;
+        float: left;
+    }
+    .basketpage-actions .basket-continue-shopping {
+        margin-bottom:10px;
+    }
+}
+
+.Actions input.action {
+    margin-left: 8px;
+}
+
+a.btn, button, input[type="submit"] {
+    min-width: 105px !important;
+}
+
+a.action,
+.action_btn,
+a.btn,
+button,
+input[type="submit"],
+.Actions .action {
+    width: auto;
+    min-width: 85px;
+    font-family: Myriad Pro, sans-serif;
+	text-decoration:none;
+    font-weight: bold;
+    color: #333;
+    height: 32px;
+    line-height: 28px;
+    border: solid 1px #bbb;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 16px;
+    background-color: #90C0D4;
+	background-image: -ms-linear-gradient(top, #FFFFFF 0%, #90C0D4 100%);
+	background-image: -moz-linear-gradient(top, #FFFFFF 0%, #90C0D4 100%);
+	background-image: -o-linear-gradient(top, #FFFFFF 0%, #90C0D4 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #90C0D4));
+	background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #90C0D4 100%);
+	background-image: linear-gradient(to bottom, #FFFFFF 0%, #90C0D4 100%);
+    text-shadow: none;
+    cursor: pointer;
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(255, 255, 255, 0.7);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(255, 255, 255, 0.7);
+    box-shadow: 2px 2px 2px 0px rgba(255, 255, 255, 0.7);
+    overflow: visible;
+    display: inline-block;
+    text-align: center;
+	padding:0 10px;
+	line-height: 32px;
+    -webkit-appearance: none;
+}
+a.action.warning,
+.action_btn.warning,
+a.btn.warning,
+button.warning,
+input[type="submit"].warning,
+.Actions .action.warning {
+    background: #cd0a0a;
+    color: #fff;
+    border: solid 1px #a00909
+}
+a.action:hover, .action_btn:hover,
+a.btn:hover, button:hover, input[type="submit"]:hover, .Actions .action:hover {
+	opacity:0.7;
+}
+.action.right {
+	float: right;
+}
+
+
+/* = Require One Form Field
+--------------------------- */
+.requireoneproductwithoptionsrelation {
+
+}
+.requireoneproductwithoptionsrelation > label {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-family: "CamboRegular", Georgia, "Times New Roman", Times, serif;
+    font-weight: normal;
+    background: #ededed;
+    padding: 4px 7px;
+    border: 1px solid #d4d4d4;
+    display: block;
+}
+.requireoneproductwithoptionsrelation h4 {
+    font: 13px/20px Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.requireoneproductwithoptionsrelation ul.product_radio {
+    overflow: hidden;
+    list-style: none;
+    list-style-type: none;
+    margin-left: 0;
+	padding-left: 0;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.requireoneproductwithoptionsrelation ul.product_radio li {
+    overflow: hidden;
+    list-style: none;
+    list-style-type: none;
+    float: left;
+    margin-right: 2px;
+    margin-bottom: 1px;
+}
+.requireoneproductwithoptionsrelation ul.product_radio li input {
+    display: none;
+}
+.requireoneproductwithoptionsrelation ul.product_radio li label {
+    display: inline-block;
+    padding: 10px 7px;
+    background-image: -ms-linear-gradient(top, #DAE6BA 0%, #FFFFFF 100%);
+    background-image: -moz-linear-gradient(top, #DAE6BA 0%, #FFFFFF 100%);
+    background-image: -o-linear-gradient(top, #DAE6BA 0%, #FFFFFF 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #DAE6BA), color-stop(1, #FFFFFF));
+    background-image: -webkit-linear-gradient(top, #DAE6BA 0%, #FFFFFF 100%);
+    background-image: linear-gradient(to bottom, #DAE6BA 0%, #FFFFFF 100%);
+    border: 1px solid #d4d4d4;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.requireoneproductwithoptionsrelation ul.product_radio li.active label {
+    background-image: -ms-linear-gradient(top, #FFFFFF 0%, #90C0D4 100%);
+    background-image: -moz-linear-gradient(top, #FFFFFF 0%, #90C0D4 100%);
+    background-image: -o-linear-gradient(top, #FFFFFF 0%, #90C0D4 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #90C0D4));
+    background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #90C0D4 100%);
+    background-image: linear-gradient(to bottom, #FFFFFF 0%, #90C0D4 100%);
+    border: 1px solid #d4d4d4;
+}
+
+.requireoneproductwithoptionsrelation .itemtypes {
+	display:table;
+	width:100%;
+}
+
+.requireoneproductwithoptionsrelation .itemtypes table td h4 {
+    display: block;
+    height: 30px;
+    margin-bottom: 0;
+}
+
+.requireoneproductwithoptionsrelation .itemtypes div.buttons {}
+
+.requireoneproductwithoptionsrelation .itemtypes div.buttons,
+.requireoneproductwithoptionsrelation .itemtypes div.item-type {
+	display:table-cell;
+}
+
+.requireoneproductwithoptionsrelation .itemtypes table td.buttons input {
+
+}
+
+#OptionPopup .field.checkbox {
+    display: block;
+    overflow: hidden;
+}
+.itemTypeMinMessage,
+.itemTypeMaxMessage {
+    background-color: #fef4ba;
+    padding: 5px 10px;
+    border: 1px solid #e8c805;
+    border-radius: 3px;
+}
+
+/* = children form field
+------------------------ */
+.BillingPage #Form_BillingPageForm .field.childrendetailsform {
+    overflow: hidden;
+    clear: both;
+    width: 100%;
+}
+.childrendetailsform > label {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-family: "CamboRegular", Georgia, "Times New Roman", Times, serif;
+    font-weight: normal;
+    background: #ededed;
+    padding: 4px 7px;
+    border: 1px solid #d4d4d4;
+    display: block;
+}
+
+.childrendetailsform .birthDayChild h3,
+.childrendetailsform .birthDayChild h4 {
+    display: inline-block;
+}
+
+.childrendetailsform ul {
+    clear: both;
+    margin-left: 0px;
+}
+
+.childrendetailsform .birthDayChild ul li ,
+.childrendetailsform .guest_list ul li{
+    list-style-type:  none;
+    list-style:  none;
+}
+
+.childrendetailsform .birthDayChild ul {
+    width: 75%;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+
+.childrendetailsform .birthDayChild ul li {
+    width: 50%;
+    float: right;
+}
+.childrendetailsform .birthDayChild ul li span.bold {
+	display:block;
+	float:left;
+	width:100px;
+	position:relative;
+	top:10px;
+}
+.childrendetailsform .birthDayChild ul .nameOnly {
+    width: 50%;
+    float: left;
+}
+
+.childrendetailsform .birthDayChild ul li.ageOnly{
+    clear: both;
+    width: 50%;
+}
+
+
+.childrendetailsform .guest-main .birthDayChild select {
+    width: 75px;
+}
+
+.childrendetailsform .guest-main {
+    position: relative;
+    width: 100%
+}
+
+.childrendetailsform .guest_list {
+    overflow: hidden;
+
+}
+
+.childrendetailsform .guest_list ul li {
+    float: left;
+    margin-bottom: 0;
+}
+.childrendetailsform p.icons img {
+    position: relative;
+}
+.childrendetailsform #addchild {
+    position: relative;
+	bottom:58px;
+	left:615px;
+	cursor:pointer;
+}
+
+.childrendetailsform #removechild {
+    position: relative;
+	bottom:58px;
+	left:615px;
+	cursor:pointer;
+}
+
+
+
+.childrendetailsform .main_list {
+    overflow: hidden;
+}
+.childrendetailsform .showGuests {
+    vertical-align: middle;
+}
+.childrendetailsform .main_list li.childDetailsHolder {
+    float: left;
+    width: 33%;
+}
+
+.childrendetailsform .main_list li.childDetailsHolder ul {
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+.childrendetailsform input.text {
+    width: 150px;
+}
+.childrendetailsform .ParticipantLabel {
+
+}
+
+/* = booking summary
+-------------------- */
+.pleasewait {
+    background-image: url(data:image/gif;base64,R0lGODlhEAAQAPYAAP///wAAANTU1JSUlGBgYEBAQERERG5ubqKiotzc3KSkpCQkJCgoKDAwMDY2Nj4+Pmpqarq6uhwcHHJycuzs7O7u7sLCwoqKilBQUF5eXr6+vtDQ0Do6OhYWFoyMjKqqqlxcXHx8fOLi4oaGhg4ODmhoaJycnGZmZra2tkZGRgoKCrCwsJaWlhgYGAYGBujo6PT09Hh4eISEhPb29oKCgqioqPr6+vz8/MDAwMrKyvj4+NbW1q6urvDw8NLS0uTk5N7e3s7OzsbGxry8vODg4NjY2PLy8tra2np6erS0tLKyskxMTFJSUlpaWmJiYkJCQjw8PMTExHZ2djIyMurq6ioqKo6OjlhYWCwsLB4eHqCgoE5OThISEoiIiGRkZDQ0NMjIyMzMzObm5ri4uH5+fpKSkp6enlZWVpCQkEpKSkhISCIiIqamphAQEAwMDKysrAQEBJqamiYmJhQUFDg4OHR0dC4uLggICHBwcCAgIFRUVGxsbICAgAAAAAAAAAAAACH+GkNyZWF0ZWQgd2l0aCBhamF4bG9hZC5pbmZvACH5BAAKAAAAIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAEAAQAAAHjYAAgoOEhYUbIykthoUIHCQqLoI2OjeFCgsdJSsvgjcwPTaDAgYSHoY2FBSWAAMLE4wAPT89ggQMEbEzQD+CBQ0UsQA7RYIGDhWxN0E+ggcPFrEUQjuCCAYXsT5DRIIJEBgfhjsrFkaDERkgJhswMwk4CDzdhBohJwcxNB4sPAmMIlCwkOGhRo5gwhIGAgAh+QQACgABACwAAAAAEAAQAAAHjIAAgoOEhYU7A1dYDFtdG4YAPBhVC1ktXCRfJoVKT1NIERRUSl4qXIRHBFCbhTKFCgYjkII3g0hLUbMAOjaCBEw9ukZGgidNxLMUFYIXTkGzOmLLAEkQCLNUQMEAPxdSGoYvAkS9gjkyNEkJOjovRWAb04NBJlYsWh9KQ2FUkFQ5SWqsEJIAhq6DAAIBACH5BAAKAAIALAAAAAAQABAAAAeJgACCg4SFhQkKE2kGXiwChgBDB0sGDw4NDGpshTheZ2hRFRVDUmsMCIMiZE48hmgtUBuCYxBmkAAQbV2CLBM+t0puaoIySDC3VC4tgh40M7eFNRdH0IRgZUO3NjqDFB9mv4U6Pc+DRzUfQVQ3NzAULxU2hUBDKENCQTtAL9yGRgkbcvggEq9atUAAIfkEAAoAAwAsAAAAABAAEAAAB4+AAIKDhIWFPygeEE4hbEeGADkXBycZZ1tqTkqFQSNIbBtGPUJdD088g1QmMjiGZl9MO4I5ViiQAEgMA4JKLAm3EWtXgmxmOrcUElWCb2zHkFQdcoIWPGK3Sm1LgkcoPrdOKiOCRmA4IpBwDUGDL2A5IjCCN/QAcYUURQIJIlQ9MzZu6aAgRgwFGAFvKRwUCAAh+QQACgAEACwAAAAAEAAQAAAHjIAAgoOEhYUUYW9lHiYRP4YACStxZRc0SBMyFoVEPAoWQDMzAgolEBqDRjg8O4ZKIBNAgkBjG5AAZVtsgj44VLdCanWCYUI3txUPS7xBx5AVDgazAjC3Q3ZeghUJv5B1cgOCNmI/1YUeWSkCgzNUFDODKydzCwqFNkYwOoIubnQIt244MzDC1q2DggIBACH5BAAKAAUALAAAAAAQABAAAAeJgACCg4SFhTBAOSgrEUEUhgBUQThjSh8IcQo+hRUbYEdUNjoiGlZWQYM2QD4vhkI0ZWKCPQmtkG9SEYJURDOQAD4HaLuyv0ZeB4IVj8ZNJ4IwRje/QkxkgjYz05BdamyDN9uFJg9OR4YEK1RUYzFTT0qGdnduXC1Zchg8kEEjaQsMzpTZ8avgoEAAIfkEAAoABgAsAAAAABAAEAAAB4iAAIKDhIWFNz0/Oz47IjCGADpURAkCQUI4USKFNhUvFTMANxU7KElAhDA9OoZHH0oVgjczrJBRZkGyNpCCRCw8vIUzHmXBhDM0HoIGLsCQAjEmgjIqXrxaBxGCGw5cF4Y8TnybglprLXhjFBUWVnpeOIUIT3lydg4PantDz2UZDwYOIEhgzFggACH5BAAKAAcALAAAAAAQABAAAAeLgACCg4SFhjc6RhUVRjaGgzYzRhRiREQ9hSaGOhRFOxSDQQ0uj1RBPjOCIypOjwAJFkSCSyQrrhRDOYILXFSuNkpjggwtvo86H7YAZ1korkRaEYJlC3WuESxBggJLWHGGFhcIxgBvUHQyUT1GQWwhFxuFKyBPakxNXgceYY9HCDEZTlxA8cOVwUGBAAA7AAAAAAAAAAAA);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 32px;
+}
+#BookingSummaryHolder.pleasewait {
+    height: 150px;
+}
+#BookingSummaryHolder.pleasewait .bookingpage-summary {
+    display: none;
+}
+.bookingpage-summary-table {
+	width: 100%;
+    border: 0 !important;
+	margin-top: 20px;
+	border-spacing: 0;
+}
+.bookingpage-summary-table td,
+.bookingpage-summary-table th {
+    border: 0 !important;
+    background: 0;
+	text-align: left;
+	padding: 10px 0;
+}
+
+
+.bookingpage-summary-table td.description {
+    width: 70%;
+}
+
+.bookingpage-summary-table td.description table td {
+    width: 130px;
+}
+
+.bookingpage-summary-table td.description table th {
+    font-weight: bold;
+}
+
+.bookingpage-summary-table td.description table td ul {
+    margin: 0px;
+}
+
+.bookingpage-summary-table ins,
+.billingpage-summary ins{
+    display: inline-block;
+    background: #beffbb;
+}
+#Form_BookingForm > .Actions {
+    text-align: right;
+}
+
+
+.summary-toggle-container {}
+    .summary-toggle-container .summary-toggle-link {
+        cursor:pointer;
+        margin-left: 12px;
+        display: inline-block;
+    }
+    .summary-toggle-container .icon {
+        margin-right: 10px;
+    }
+    .summary-toggle-container.collapsed .icon-arrow-up {display: none;}
+    .summary-toggle-container.collapsed .icon-arrow-down {display: inline;}
+    .summary-toggle-container.expanded .icon-arrow-up {display: inline;}
+    .summary-toggle-container.expanded .icon-arrow-down {display: none;}
+    .summary-toggle-container .summary-toggle-item {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 0 15px;
+    }
+    .summary-toggle-container.collapsed .summary-toggle-item {}
+        .summary-toggle-container .summary-toggle-item li {
+            margin: 0;
+            padding: 0;
+        }
+
+
+.bookingpage-summary-table td.cost,
+.bookingpage-summary-orderitems th.cost,
+.bookingpage-summary-orderitems td.cost {
+    width: 15%;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.bookingpage-summary-table tr:nth-child(even) {
+    background: transparent  !important;
+}
+.bookingpage-summary-totals.bookingpage-summary-table {
+    font-weight: bold;
+    text-align: right;
+    border-top: 1px solid #666666 !important;
+}
+.bookingpage-summary-totals td {
+    text-align: right;
+}
+.imageContent {
+    float: left;
+    padding: 10px;
+}
+
+.OrderSummaryComparison {
+    overflow: hidden;
+}
+
+.OrderSummaryComparison .RecentOrderSummary {
+    float: left;
+    width: 45%;
+}
+
+.OrderSummaryComparison .CurrentOrderSummary {
+    float: right;
+    width: 45%;
+}
+.OrderSummaryComparison .hiddenOnSummary,
+.OrderSummaryComparison .billingpage-summary-diposite{
+    display: none;
+}
+
+/* = prerequisites
+-----------------------------*/
+.BillingPage #Form_BillingPageForm .field.prerequisites {
+    width: 100%;
+}
+.BillingPage #Form_BillingPageForm .field.prerequisites .field {
+    width: 100%;
+    float: none;
+}
+.BillingPage #Form_BillingPageForm .field.prerequisites label {
+	width:auto;
+}
+.billingpage-summary-table {
+    border: 0 !important;
+    float: right;
+}
+.billingpage-summary-table td,
+.billingpage-summary-table th {
+    border: 0 !important;
+    background: 0;
+}
+
+.billingpage-summary-table td.description {
+    width: 75%;
+}
+.billingpage-summary-table td.cost {
+    width: 25%;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.billingpage-summary {
+margin-top: 5px;
+}
+
+.billingpage-summary-table tr:nth-child(even) {
+    background: transparent  !important;
+}
+.billingpage-summary-totals.billingpage-summary-table {
+    font-weight: bold;
+    text-align: right;
+    border-top: 1px solid #666666 !important;
+}
+.billingpage-summary-totals td {
+    text-align: right;
+}
+/* = Booking Page
+----------------- */
+.BookingPage form#Form_BookingForm { float: none; width: 100%; max-width: 100%; }
+
+.BookingPage h3,
+.CustomerLogin h3 {
+	background: #333;
+	padding: 5px;
+	display: block;
+	color: #FFF;
+}
+
+.BookingPage form#Form_BookingForm .Actions { overflow: hidden; display: none; }
+.BookingPage form#Form_BookingForm .Actions input { float: right; }
+
+table.bookingpage-summary-orderitems td.Cost,
+table.bookingpage-summary-orderitems th.Cost {
+    text-align: right!important;
+}
+table.bookingpage-summary-orderitems td.remove {
+    text-align: right;
+}
+#BasketPageOrderItems table.bookingpage-summary-orderitems td.edit {
+    padding-left: 10px;
+}
+#BasketPageOrderItems table.bookingpage-summary-orderitems td.edit a,
+#BasketPageOrderItems table.bookingpage-summary-orderitems td.remove a {
+    text-decoration: none;
+    color: #555;
+}
+#BasketPageOrderItems table.bookingpage-summary-orderitems td.edit a:hover,
+#BasketPageOrderItems table.bookingpage-summary-orderitems td.remove a:hover {
+    color: #000088;
+}
+
+
+#BasketPageOrderItems table .description {
+    width: 78%;
+}
+
+#BasketPageOrderItems table .cost {
+    width: 16%;
+}
+
+#BasketPageOrderItems table .edit,
+#BasketPageOrderItems table .remove {
+    width: 3%;
+}
+
+
+.orderitem-edit-container .Actions {
+    display: block;
+    text-align: right;
+}
+
+.orderitem-edit-container .Actions input {
+    line-height: 24px;
+    height: 24px;
+    min-width: 64px !important;
+    font-size: 14px !important;
+}
+
+#Form_BookingFormEdit .PriceContainer {
+    display: none;
+}
+
+#Form_BookingFormEdit .product_pricing .PriceContainer {
+    display: block;
+}
+
+#Form_BookingFormEdit .productquantity {
+    margin: 0;
+}
+
+
+/* = Billing Page
+----------------- */
+.BillingPage #Form_BillingPageForm {
+    width: 100%;
+    max-width: 100%;
+}
+.BillingPage #Form_BillingPageForm fieldset {
+    width: 100%;
+    overflow: hidden;
+}
+.BillingPage #Form_BillingPageForm h3 {
+	background: #333;
+	padding: 5px;
+	display: block;
+	clear:both;
+	color: #FFF;
+}
+
+/* Robs changes for event */
+.Actions .action,
+a.action,
+input[type="submit"],
+button.action,
+input#Form_BookingFormEdit_action_cancelEditOrderItem,
+input#Form_BillingPageAdminForm_action_doAddTransaction {
+color: #FFF;
+background-color: #333;
+background-image: none;
+font-size: 17px;
+border-radius: 6px;
+font-weight: normal;
+border: none;
+-webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+transition: border .25s linear, color .25s linear, background-color .25s linear;
+-webkit-font-smoothing: subpixel-antialiased;
+}
+
+@media only screen and (max-width: 760px) {
+.field .checkbox, .field .radio {
+width: 35px;
+height: 35px;
+}
+}
+
+
+input#Form_PromoCodeForm_action_PromotionalCodeForm {
+color: #FFF;
+background-color: #333;
+background-image: none;
+font-size: 17px;
+border-radius: 6px;
+font-weight: normal;
+border: none;
+-webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+transition: border .25s linear, color .25s linear, background-color .25s linear;
+-webkit-font-smoothing: subpixel-antialiased;
+}
+
+p.basketpage-actions {
+float: right;
+width: 50%;
+}
+
+.basketpage-promotions {
+width: 50%;
+float: left;
+display: block;
+min-width: 320px;
+}
+#Form_PromoCodeForm fieldset{
+    float: left
+}
+
+body a.action.basket-checkout,
+.BillingPageAdmin-actions a.action,
+input#Form_BookingFormEdit_action_editOrderItem,
+input#Form_BookingForm_action_doBookingForm,
+input#Form_BookingForm_action_doBookingFormAndConfirm,
+input#Form_BillingPageForm_action_BillingPageFormSubmit,
+input#CustomMemberLogin_LoginForm_action_dologin,
+input#Form_RedeemVoucherForm_action_doRedeemVoucherFormSubmit,
+input#Form_PaymentOptionsAndSummaryPageForm_action_PaymentOptionsAndSummaryPageFormSubmit,
+input#Form_PaymentOptionsAndSummaryPageForm_action_BackToBillingPage,
+#OAuthAuthenticator input[type=submit]{
+color: #FFF;
+background-color: #008800;
+background-image: none;
+font-size: 17px;
+border-radius: 6px;
+font-weight: normal;
+border: none;
+-webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+transition: border .25s linear, color .25s linear, background-color .25s linear;
+-webkit-font-smoothing: subpixel-antialiased;
+}
+a.action.basket-checkout {
+    border:auto;
+}
+input#Form_PaymentOptionsAndSummaryPageForm_action_BackToBillingPage {
+    background:#333;
+    color:#FFF;
+}
+input#Form_BookingForm_action_doBookingForm[disabled] {
+    opacity: 0.7;
+}
+
+.MainEvent {
+	margin-bottom: 15px;
+}
+/* End of robs changes */
+
+.BillingPage #Form_BillingPageForm h4 {
+    clear: both;
+}
+.BillingPage #Form_BillingPageForm h5 {
+	clear: both;
+	font-size: 14px;
+	border-bottom: 1px solid #DAD5D5;
+}
+.BillingPage #Form_BillingPageForm .CopyFromAbove {
+    width: 100%;
+}
+.BillingPage #Form_BillingPageForm .CopyFromAbove span {
+    float: right;
+    margin-top: -27px;
+    margin-right: 2px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.BillingPage #Form_BillingPageForm .CopyFromAbove span img {
+    float: left;
+    margin-right: 4px;
+}
+.BillingPage #Form_BillingPageForm div.field {
+    width: 50%;
+    float: left;
+    margin: 10px 0;
+}
+	.BillingPage #Form_BillingPageForm div.field.insurancedetails {
+		width:100%;
+	}
+	.BillingPage #Form_BillingPageForm div.field label {
+		width: 39%;
+		float:left;
+	}
+	.BillingPage #Form_BillingPageForm .prerequisites div.field label {
+		width:100%;
+		float:none;
+	}
+	.BillingPage #Form_BillingPageForm .prerequisites div.field {
+		width: 100%;
+		float: none;
+		padding: 5px;
+	}
+	.BillingPage #Form_BillingPageForm div.field label.guestCheckBox {
+		width:auto;
+		float:none;
+	}
+	#SuppressEmailSend {
+		padding-left:5px;
+	}
+	.BillingPage #Form_BillingPageForm div.dropdown label,
+	.BillingPage #Form_BillingPageForm div.text label,
+	.BillingPage #Form_BillingPageForm div.postcodelookup label{
+		position:relative;
+		top:10px;
+	}
+    .CompositeField.postcodelookup {
+        float: left;
+        width: 50%;
+    }
+    .BillingPage #Form_BillingPageForm .CompositeField.postcodelookup div.PCLookupField {
+        max-width: 58%;
+        width: 100%;
+    }
+    .BillingPage #Form_BillingPageForm .CompositeField.postcodelookup .PCLookupField .middleColumn {
+        padding-right: 0;
+    }
+    .CompositeField.postcodelookup .PCLookupField input {
+        max-width: 109px;
+    }
+	.BillingPage #Form_BillingPageForm div#SuppressEmailSend label {
+		width:auto;
+	}
+	.BillingPage #Form_BillingPageForm div.field label{
+
+	}
+	.BillingPage #Form_BillingPageForm div.field .middleColumn {
+        text-align: right;
+        /*padding-right: 25px;*/
+        padding-right: 5%;
+        width: 55%;
+        float: left;
+	}
+    .BillingPage #Form_BillingPageForm div.field.even .middleColumn {
+        padding-right: 0;
+    }
+    .BillingPage #Form_BillingPageForm div.field .middleColumn .help {
+        height:24px;
+        width:24px;
+        position:relative;
+        top:7px;
+        cursor:help;
+    }
+
+.BillingPage #Form_BillingPageForm div.passportdetails {
+    width: 100%;
+    clear: both;
+    float: left;
+}
+
+#BillingPageBookingSummary {
+    margin-top: 32px;
+    clear: both;
+}
+
+@media only screen and (max-width: 760px) {
+#BillingPageBookingSummary {
+	float:left;
+	width:100%;
+	margin:0;
+}
+}
+	.BillingPage #Form_BillingPageForm #BillingPagePayment label {
+		width:auto;
+	}
+
+/* = Confirmation Page
+---------------------- */
+.ConfirmationPage .Left { width: 40%; float: left; }
+.ConfirmationPage .Right { width: 60%; float: right; }
+.ConfirmationPage .Right .billingsuccesspage-summary table { width: 100% !important; }
+@media only screen and (max-width: 760px) {
+	.ConfirmationPage .Left,
+	.ConfirmationPage .Right { width: 98%; float: none; margin:0 1%; }
+	.ConfirmationPage .Right{margin-top:20px;}
+}
+
+
+/* = Template Page
+------------------------- */
+.tabbedpagecontent .tabset ul li a.active {
+    background-image: -ms-linear-gradient(top, #FFFFFF 0%, #90C0D4 100%);
+    background-image: -moz-linear-gradient(top, #FFFFFF 0%, #90C0D4 100%);
+    background-image: -o-linear-gradient(top, #FFFFFF 0%, #90C0D4 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #90C0D4));
+    background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #90C0D4 100%);
+    background-image: linear-gradient(to bottom, #FFFFFF 0%, #90C0D4 100%);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+.tabbedpagecontent .tabset ul li a {
+    background-image: -ms-linear-gradient(top, #DAE6BA 0%, #FFFFFF 100%);
+    background-image: -moz-linear-gradient(top, #DAE6BA 0%, #FFFFFF 100%);
+    background-image: -o-linear-gradient(top, #DAE6BA 0%, #FFFFFF 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #DAE6BA), color-stop(1, #FFFFFF));
+    background-image: -webkit-linear-gradient(top, #DAE6BA 0%, #FFFFFF 100%);
+    background-image: linear-gradient(to bottom, #DAE6BA 0%, #FFFFFF 100%);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+/* booking summary */
+.bookingpage-summary-orderitems table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.bookingpage-summary-orderitems td {
+    border: 0;
+    padding: 5px 0;
+    background-color: transparent;
+}
+
+/* =basket page
+------------------- */
+#BasketPageOrderItems table {
+    width: 100%;
+    border: 0;
+}
+#BasketPageOrderItems .physicalItemContent table {
+     border: 1px solid #D4D4D4;
+}
+#BasketPageOrderItems td,
+#BillingPageAdminBookingSummary td {
+    border: 0;
+    padding: 5px 0;
+    background-color: transparent;
+}
+
+#BasketPageOrderItems td:last-child {
+    width: 3%;
+}
+#BillingPageAdminBookingSummary td:last-child {
+    width: 5%;
+}
+
+
+
+#BasketPageOrderItems tr {
+    background: transparent;
+}
+
+
+.BasketPage div.bookingpage-summary {
+    overflow: hidden;
+}
+
+.BasketPage div.bookingpage-summary table.bookingpage-summary-table {
+    float: right;
+}
+
+.YouMayAlsoLikeContainer table {
+    border-collapse: collapse;
+    border: none;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.YouMayAlsoLikeContainer table {
+    padding: 2px 5px;
+    border: 1px solid #d4d4d4;
+    vertical-align: top;
+    background-color: #ededed;
+}
+.YouMayAlsoLikeContainer .Actions .action {
+    background: none repeat scroll 0 0 #B80000;
+    border: medium none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    display: inline-block;
+    float: left;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 6px 15px;
+    text-transform: uppercase;
+    position: relative;
+    left: 5px;
+}
+.YouMayAlsoLikeContainer .NameContent {
+    font-weight: bold;
+    font-size: 15px;
+    Text-align: center;
+}
+.QtyField {
+    text-align: center;
+    font-weight: bold;
+}
+.YouMayAlsoLikeContainer table td, .YouMayAlsoLikeContainer table th {
+    border: none;
+    padding: 2px 5px;
+    vertical-align: top;
+    width: 160px;
+}
+.PriceContainer {
+    font-weight: bold;
+    Text-align: center;
+}
+.YouMayAlsoLikeContainer {
+    padding: 10px;
+}
+.DiscriptionContent {
+    font-style: italic;
+}
+.NameContent {
+    font-weight: bold;
+    font-size: 20px;
+    Text-align: center;
+}
+.ImgContainer {
+    Text-align: center;
+}
+.actionLink {
+    cursor: pointer;
+}
+.LabelContainer {
+    font-weight: bold;
+}
+.item-name {
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: underline;
+}
+.BasketPage table {
+    border-collapse: collapse;
+    border: none;
+    margin: 0 0;
+    text-align: left;
+}
+.BasketPage table td {
+    border: none;
+    padding: 2px 5px;
+    vertical-align: top;
+}
+.bold {
+    font-weight: bold;
+}
+.billingsuccesspage-orderitems-table td.cost {
+    width: 25%;
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* = my booking page
+--------------------- */
+#EditBookingPopup iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* = user switcher
+--------------------- */
+form.userswitcher{
+	width: inherit;
+	width: 200px;
+	overflow: hidden;
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	background: rgba(255,255,255,0.8);
+	border: 1px solid #ddd;
+	padding: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin: 0;
+	z-index: 3;
+}
+
+form.userswitcher input,
+form.userswitcher input[type="submit"],
+form.userswitcher .Actions,
+form.userswitcher .field,
+form.userswitcher label,
+form.userswitcher fieldset{
+	margin: 0;
+	padding: 0;
+}
+
+form.userswitcher select{
+	width: 140px;
+}
+
+form.userswitcher label{
+	margin-top: 5px;
+}
+
+.userswitcher fieldset label,
+.userswitcher fieldset .middleColumn{
+	float: left;
+}
+
+form.userswitcher select,
+form.userswitcher .Actions{
+	margin-left: 10px;
+}
+
+.userswitcher fieldset, .userswitcher .Actions{
+	float: left;
+	overflow:hidden;
+}
+.basketpage-actions {
+    text-align:right;
+}
+
+/* =create facebook event
+------------------------- */
+#ConfirmationPagePopupIFrame {
+    height: 100%;
+}
+
+.createEventForm {
+    width: 100%;
+}
+
+.contentSelect {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 200px;
+}
+
+.contentSelect ul,
+.contentSelect ul li {
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+    overflow: hidden;
+}
+.contentSelect ul li {
+    float: left;
+}
+
+#BookingSummaryHolder .message {
+    display: block;
+}
+#addresslist {
+    max-width: 375px;
+}
+
+/** ------------------------------------------------------------------
+* Dialog
+*
+* Contained in a jQuery UI dialog ('.ui-dialog'), with either inline
+* markup (for the "insert" dialogs), or an iframe (for member profile).
+* ----------------------------------------------------------------- */
+.ui-widget-header { background-color: #b0bec7; padding: 8px 8px 6px 8px; border-bottom: 2px solid #8399a7; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RkZTNlNyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzkyYTViMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dde3e7), color-stop(100%, #92a5b2)); background-image: -webkit-linear-gradient(#dde3e7, #92a5b2); background-image: -moz-linear-gradient(#dde3e7, #92a5b2); background-image: -o-linear-gradient(#dde3e7, #92a5b2); background-image: linear-gradient(#dde3e7, #92a5b2); border-bottom: 3px solid #5c7382; padding: 8px; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
+.ui-widget-header .ui-dialog-title { padding: 6px 0; text-shadow: #ced7dc 1px 1px 0; }
+.ui-widget-header a.ui-dialog-titlebar-close { position: absolute; top: -8px; right: -15px; width: 30px; height: 30px; z-index: 100000; }
+.ui-widget-header a.ui-state-hover { border-color: transparent; background: transparent; }
+.ui-widget-header a.ui-state-hover .ui-icon-closethick { background: url('../../framework/admin/images/sprites_32x32-s98eda4974b.html') 0 0 no-repeat; }
+.ui-widget-header .ui-icon-closethick { background: url(../../mysite/images/popup_close.png) !important;
+    width: 28px !important;
+    height: 28px !important; }
+
+
+.ui-widget-overlay-light { background: #aaaaaa url(../../framework/thirdparty/jquery-ui-themes/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x; opacity: 0.3; }
+
+.ui-widget-overlay { background-color: #000; background-image: none; }
+
+.ui-dialog .ss-ui-dialog.ui-dialog-content { padding-top: 0px }
+
+.ui-dialog {
+        background: #F0F3F4;
+    border: 0px !important;
+    border-radius: 1px !important;
+    overflow: visible;
+    padding: 3px !important;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.675);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.675);
+    min-width: 350px;
+ }
+
+.ui-dialog .ui-dialog-titlebar.ui-widget-header { font-size: 14px; padding: 0;  height: 37px; -webkit-box-shadow: none; -o-box-shadow: none; box-shadow: none; border: none; background-color: transparent; background-image: url(../../framework/admin/images/textures/cms_content_header.png); background-repeat: repeat; }
+.ui-dialog .ui-dialog-titlebar.ui-widget-header { font-size: 14px; padding: 0;  height: 37px; -webkit-box-shadow: none; -o-box-shadow: none; box-shadow: none; border: none; background-color: transparent; background-image: url(../../framework/admin/images/textures/cms_content_header.png); background-repeat: repeat; }
+.ui-dialog .ui-dialog-titlebar.ui-widget-header .ui-dialog-title { position: absolute; left: 13px; }
+.ui-dialog .ui-dialog-content { overflow: auto; }
+.ui-dialog .ui-dialog-content.loading { background-image: url(../../framework/admin/images/spinner.gif); background-position: 50% 50%; background-repeat: no-repeat; }
+.ui-dialog .cms-dialog-content { background: url("../../framework/admin/images/textures/bg_cms_main_content.png") repeat left top #f0f3f4; padding-bottom: 8px; padding-top: 0px; }
+.ui-dialog .cms-dialog-content .Actions { overflow: auto; margin: 8px 0; padding-bottom: 8px; float: right; }
+.ui-dialog .cms-dialog-content .ui-tabs { position: static; }
+.ui-dialog .cms-dialog-content .ui-tabs .ui-tabs-nav { position: absolute; top: 0; right: 40px; }
+.ui-dialog .cms-dialog-content .ui-tabs .ui-tabs-panel { border: 0; }
+.ui-dialog .cms-dialog-content .clear { clear: both; }
+.ui-dialog.loading { background-image: url(../../framework/admin/images/spinner.gif); background-position: 50% 50%; background-repeat: no-repeat; }
+
+
+#wrapper{
+    margin: 0px auto;
+    text-align: left;
+    width: 960px;
+}
+
+#paging_container1{
+    height: 320px;
+}
+
+#paging_container2{
+    height: 356px;
+}
+
+#paging_container3{
+    height: 190px;
+}
+
+#paging_container4{
+    height: 307px;
+    overflow: hidden;
+}
+
+#paging_container8 .no_more{
+    background-color: white;
+    color: gray;
+    cursor: default;
+}
+
+.ellipse{
+    float: left;
+}
+
+.container{
+    width: 260px;
+    float: left;
+    margin: 50px 10px 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+.page_navigation , .alt_page_navigation{
+    padding-bottom: 10px;
+}
+
+.page_navigation a, .alt_page_navigation a{
+    padding:3px 10px;
+    margin:2px;
+    text-decoration:none;
+    font-size: 12px;
+    background: #846b6b;
+    line-height: normal;
+    display: inline-block;
+    border-radius: 3px;
+}
+.page_navigation a:hover, .alt_page_navigation a:hover{
+    background: #AA9191;
+}
+
+.page_navigation a.active_page{
+    background: #2ECC71;
+}
+.page_navigation a.active_page:hover{
+    background: #54F297;
+}
+
+.content, .alt_content{
+    color: black;
+}
+
+.content li, .alt_content li, .content > p{
+    padding: 5px
+}
+
+.BillingPage #Form_BillingPageForm .field.paymentmethod {
+    width: 100%;
+}
+.field.paymentmethod .dropdownContainer {
+    overflow: hidden;
+    width: 100%;
+}
+.field.paymentmethod select.paymentmethod {
+    padding: 6px 5px;
+    font-size: 15px;
+    background-color: #fff;
+    border: 1px solid #dad9d9;
+}
+.field.paymentmethod div.logo {
+    width: 30%;
+    float: right;
+}
+.logosAndInformation {
+    overflow: hidden;
+    padding-top: 20px;
+    float: right;
+}
+.logosAndInformation .paymentOption .cards {
+    overflow: hidden;
+}
+.logosAndInformation .paymentOption .cards img {
+    float: left;
+    margin: 0px 10px 10px 0px;
+    box-shadow: 3px 3px 5px #999;
+    -moz-box-shadow: 3px 3px 5px #999;
+    -webkit-box-shadow: 3px 3px 5px #999;
+}
+.bookingPage-sub-title {
+    color : #00A6EB;
+}
+
+/* = GoogleMapPageSection
+--------------------------- */
+.PageSection_GoogleMap {
+	/*height:300px;*/
+}
+
+
+/* = Cookie Bar
+---------------- */
+#cookieBar {
+	background:#fff;
+}
+#cookieBar .container {
+	width:910px;
+	float:none;
+	margin:0 auto;
+}
+@media (max-width: 910px) {
+    #cookieBar .container {
+        width: auto;
+    }
+}
+/* = Accepted Cards
++--------------------------- */
+.AcceptedCardIcons {
+	line-height:normal;
+}
+
+.AcceptedCardIcons img {
+	margin:0 5px;
+	height:30px;
+}
+
+.PageSection_GoogleMap #content {
+ 	min-height:100px;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	/* = Require One Form Field
+	--------------------------- */
+	.requireoneproductwithoptionsrelation .itemtypes div.buttons {
+		padding:0;
+		display:block;
+	}
+	.requireoneproductwithoptionsrelation .itemtypes div.buttons,
+	.requireoneproductwithoptionsrelation .itemtypes div.item-type {
+		display:block;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    .BillingPage #Form_BillingPageForm div.field .middleColumn {
+        padding-right: 0;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 940px) {
+
+}.PageSection_GoogleMap #content {
+	min-height:100px;
+}
+.PageSection_GoogleMap #content h3,
+.PageSection_GoogleMap #content p {
+	margin:0;
+}
+
+/* = Booking Page FAQs
+---------------- */
+.bookingpage-faq-container {
+	clear:both;
+	margin:0;
+	font-size:12px;
+}
+.bookingpage-faq-container h2 {
+	margin:10px 0 0 0;
+	padding:5px 0;
+}
+
+.availability_grid_cell span {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.availability_grid-Red{
+    background: #ed1b24;
+}
+
+.availability_grid-Green{
+    background: #23b14d;
+}
+
+.availability_grid-Amber{
+    background: yellow;
+}
+
+@media only screen and (max-width: 760px) {
+	.childrendetailsform .main_list li.childDetailsHolder ul {
+		padding:0;
+	}
+
+	body .childrendetailsform .birthDayChild ul {
+		width: 100%;
+		margin-bottom: 30px;
+		padding:0;
+	}
+	body .childrendetailsform .birthDayChild ul li {
+		width: 100%;
+		float: none;
+	}
+	.childrendetailsform .birthDayChild ul .nameOnly {
+		width: 100%;
+		float: none;
+	}
+	.childrendetailsform .birthDayChild ul li.ageOnly {
+		clear: both;
+		width: 100%;
+	}
+	.childrendetailsform #addchild, .childrendetailsform #removechild {
+		position: static;
+		bottom:auto;
+		left:auto;
+	}
+
+    .CompositeField.postcodelookup {
+        width: 100%;
+    }
+    .BillingPage #Form_BillingPageForm .CompositeField.postcodelookup div.PCLookupField {
+        max-width: 71%;
+        width: 100%;
+    }
+    .BillingPage #Form_BillingPageForm .CompositeField.postcodelookup .PCLookupField .middleColumn {
+        padding-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+	.childrendetailsform .main_list li.childDetailsHolder {
+		float: none;
+		width: 100%;
+	}
+}
+.BillingPage #Form_BillingPageForm div#CardToken.field {
+    float: none;
+    width: 100%;
+	clear: both;
+}
+	.BillingPage #Form_BillingPageForm div#CardToken.field label {
+		display: none;
+	}
+.BillingPage #Form_BillingPageForm div#PaymentMethod.field {
+    float: none;
+    width: 100%;
+}
+.BillingPage #Form_BillingPageForm div#CardToken.field div select {
+    float: left;
+}
+.BillingPage #Form_BillingPageForm div#BillingPagePayment h2:last-child {
+    display: none;
+}
+select#Form_BillingPageForm_PaymentMethod {
+	min-width: 98%;
+}
+#PaymentMethod label {
+	display: none;
+}
+
+/* = Payment Page
+---------------------- */
+.paymentpage-redirecting {
+	text-align:center;
+}
+.paymentpage-redirecting p {
+	text-align:center;
+}
+.paymentpage-redirecting-provider {
+	margin-bottom:20px;
+}
+
+
+/* = SSO Buttons
+---------------------- */
+nav.sso {
+    overflow: hidden;
+}
+nav.sso ul,
+nav.sso li {
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav.sso li {
+    margin: 0 10px 10px 0;
+}
+
+.BillingPageInner nav.sso li {
+    float: left;
+}
+
+nav.sso li a {
+    display: block;
+    width: 170px;
+    height: 52px;
+    line-height: 52px;
+    color: #fff;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    padding: 0 0 0 80px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+nav.sso li a.facebook-sso {
+    background: url('../images/facebook-bg.html') no-repeat;
+}
+
+
+nav.sso li a.gmail-sso {
+    background: url('../images/gmail-bg.html') no-repeat;
+}
+
+
+nav.sso li a.twitter-sso {
+    background: url('../images/twitter-bg.html') no-repeat;
+}
+
+.BillingPage #Form_BillingPageForm #NotificationByEmail {
+    width: 100%;
+    padding: 0 5px;
+}
+
+.BillingPage #Form_BillingPageForm #NotificationByEmail > label {
+    float: none;
+}
+
+#BillingPagePayment .logo {
+    min-height: 40px;
+    float: left;
+}
+
+#BillingPagePayment {
+    float: right;
+    width: 48%;
+    margin-left: 2%;
+}
+
+@media only screen and (min-width: 780px) {
+    #ChildCareVouchersStart,
+    #CreditCardChargesStart {
+        float: right;
+        width: 49%;
+    }
+}
+@media only screen and (max-width: 780px) {
+    #ChildCareVouchersStart,
+    #CreditCardChargesStart {
+        width: 100%;
+        float: none;
+        clear:both;
+    }
+}
+
+#OtherInfo {
+    float: left;
+    width: 50%;
+}
+
+.BillingPage #Form_BillingPageForm #PaymentMethod.field .middleColumn {
+    padding-right: 0;
+}
+
+.BillingPage #Form_BillingPageForm #OtherInfo div.field {
+    width: 100%
+}
+
+.clear {
+    clear: both;
+}
+
+.field.PCLookupField .middleColumn input.PCLookupField {
+    max-width: 119px;
+}
+
+.field.PCLookupField .postcode_lookup_select_button {
+    width: auto;
+}
+
+tr.participant > .description,
+tr.participant > .cost {
+    font-weight: bold;
+}
+
+
+/* = Login/Out buttons
+---------------------- */
+.LoginDropdown {
+    font-size: 13px;
+    display: inline-block;
+    border: solid 1px #333;
+    background: #fff;
+    position: relative;
+    width: 120px;
+}
+    .LoginDropdown a,
+    .footerWrapper footer .LoginDropdown a {
+        text-decoration: none;
+        display: block;
+        padding: 5px;
+        color: #333;
+        line-height: normal;
+    }
+    .LoginDropdown a span {
+        font-size: 19px;
+        float: right;
+    }
+    .LoginDropdown__options {
+        position: absolute;
+        left:-1px;
+        right:-1px;
+        z-index: 5000;
+        background: #fff;
+        border: solid 1px #333;
+        border-top:0;
+        display: none;
+    }
+        .LoginDropdown__options a {
+            border-top: solid 1px #333;
+        }
+        .LoginDropdown__options a.signin,
+        .footerWrapper footer .LoginDropdown__options a.signin{
+            color: #fff;
+            background: #3ea018;
+        }
+
+
+/* = BookingPage Filters
+---------------------- */
+.BookingPageFilters {
+    display: inline-block;
+    width: 85%;
+}
+.BookingPageFilters .middleColumn {
+    vertical-align: top;
+}
+#Form_FilterEventsForm_ResourceFilterResourceID_chzn {
+    top: 7px;
+    width: 100% !important;
+}
+
+.BillingPage #Form_BillingPageForm div.field.validationplaceholder {
+    /*display: none;*/
+	float: none;
+    width: initial;
+}
+
+.BillingPage #Form_BillingPageForm div.field.validationplaceholder.holder-validation {
+    display: block;
+    width: 100%;
+    margin-top: 0;
+}
+
+.RedeemVoucherContent .ListItem_ActionsContainer {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    text-align: right;
+}
+
+.VoucherCode_Label {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.VoucherCode_Value {
+    font-size: 18px;
+}
+
+body.BLController.NewBooking {
+    width: 80%;
+    margin: 0 auto;
+}
+.participant_suggetions .chzn-single,.relatingmember_lookup .chzn-single {
+    color:#333 !important;
+    background:#fff !important;
+}
+.participant_suggetions {
+    margin-top:10px;
+}
+.participantsContainer {
+    min-height:300px;
+}
+@media screen and (max-width: 480px) {
+
+    .dhx_cal_navline .dhx_cal_date {
+        top: -7px !important;
+        position: sticky !important;
+        z-index:1px !important;
+    }
+
+    .SeasonSevenDayCalendarField td{font-size: .5em; font-weight: bold; height: 0px; padding-top: 5px; padding-bottom: 5px;}
+#ui-datepicker-div {width: 90%;}
+.ui-datepicker {width: 98%;}
+
+    .ui-dialog {
+        width:95% !important;
+    }
+    .dhx_cal_light_wide .dhx_wrap_section {
+        height:140px !important;
+    }
+    .dhx_cal_light_rec.dhx_cal_light_wide .dhx_cal_larea { width:98% !important; height:120px !important;}
+    .dhx_cal_light_rec.dhx_cal_light_wide { width:95% !important; left:5px !important;}
+    .dhx_section_time {
+        font-size: inherit;
+        height: 100px !important;
+        clear: both  !important;
+        white-space: normal !important;
+        margin-left:15% !important;
+    }
+    .dhx_section_time > span { clear:both  !important; float:left; width:100%; color:#FFF }
+    .dhx_cal_light select:nth-child(5) {
+        clear:both !important;
+    }
+    .dhx_cal_light, .dhx_cal_light select, .dhx_cal_ltext textarea {
+       float:left !important;
+       margin-left:5px !important;
+    }
+   .dhx_cal_lsection {
+        clear: both;
+        width:100% !important;
+        text-align:center !important;
+    }
+
+    tr.event_raw.event-tr-available,tr.event_raw.waiting-list  {display: grid; text-align: center;}
+    table.EventTable td {height: 25px !important; }
+    table.EventTable td.selectEvent {margin: auto; padding-bottom: 10px;}
+    div#Quantity {display: grid;}
+    .ProductQuantityContainer { display:block !important;  }
+    .ProductQuantityContainer .ProductQuantityImageContent { float:left !important; margin-right:10px; }
+
+    .ProductQuantityContainer .QtyContainer {width: 100%; display: flex; float:left !important; width: 100% !important;}
+    .ProductQuantityContainer .PriceContainer {padding-right: 10px; width: 48%;}
+    .ProductQuantityContainer .QtyField {
+            width: 50%;
+            text-align: right;
+            margin-top: 10px;
+            margin-right: 10px;
+    }
+    form#Form_PromoCodeForm {
+        width:100% !important;;
+    }
+    #Form_PromoCodeForm .Actions {
+        margin-left:-5px !important;
+        clear:both;
+    }
+    .Unavailable span {
+        display:none;
+    }
+    .Unavailable:after {
+        content: "No Avl";
+    }
+    .calenderdates .eventcell, .calenderdates .eventcell span {
+        font-size:11px;
+    }
+    .daysheader th {
+        font-size:11px;
+    }
+    .ProductQuantityContainer .QuantitySelectContainer .minus,
+    .ProductQuantityContainer .QuantitySelectContainer .plus { height:24px; width:24px; }
+    .QuantitySelectContainer {width: 25%; margin: auto; display:grid;}
+    .minus {margin: auto;}
+    .plus {margin: auto;}
+
+    .PlusMinusNumericText {
+        margin-left:5px;
+    }
+
+    .ListItem_PriceContainer {
+        position: static;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    #TabbedPageMainContent table tr td {
+        padding:5px;
+    }
+    .ListItem_ImageContainer {
+        float:left;
+        margin-top:11px;
+    }
+    .Listing_Item .ListItem_DescriptionContainer {
+        margin-left:0px !important;
+    }
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 640px) {
+    .BillingPage #Form_BillingPageForm div.field {
+        width:95% !important;
+    }
+    table.EventTable tr td.startdate {padding-left: 10px; min-width: 125px;}
+    span.start-date {min-width: 100px; display: block;}
+    .dhx_cal_light_wide .dhx_wrap_section {
+        height:140px !important;
+    }
+    .dhx_cal_light_rec.dhx_cal_light_wide .dhx_cal_larea { width:98% !important; height:120px !important;}
+    .dhx_cal_light_rec.dhx_cal_light_wide { width:95% !important; left:5px !important;}
+    .dhx_section_time {
+        font-size: inherit;
+        height: 100px !important;
+        clear: both  !important;
+        white-space: normal !important;
+        margin-left:30% !important;
+    }
+    .dhx_section_time > span { clear:both  !important; float:left; width:100%; color:#FFF }
+    .dhx_cal_light select:nth-child(5) {
+        clear:both !important;
+    }
+    .dhx_cal_light, .dhx_cal_light select, .dhx_cal_ltext textarea {
+       float:left !important;
+       margin-left:5px !important;
+    }
+    .dhx_cal_lsection {
+        clear: both;
+        width:100% !important;
+        text-align:center !important;
+    }
+    .dhx_cal_navline .dhx_cal_date {
+        top: -7px !important;
+        position: sticky !important;
+        z-index:1px !important;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 699px) {
+    #Form_PromoCodeForm .Actions {
+        margin-top: -10px;
+        margin-left: -5px;
+        clear: both;
+    }
+    .dhx_cal_light_wide .dhx_wrap_section {
+        height:140px !important;
+    }
+    .dhx_cal_light_rec.dhx_cal_light_wide .dhx_cal_larea { width:98% !important; height:120px !important;}
+    .dhx_cal_light_rec.dhx_cal_light_wide { width:95% !important; left:5px !important;}
+    .dhx_section_time {
+        font-size: inherit;
+        height: 100px !important;
+        clear: both  !important;
+        white-space: normal !important;
+        margin-left:30% !important;
+    }
+    .dhx_section_time > span { clear:both  !important; float:left; width:100%; color:#FFF }
+    .dhx_cal_light select:nth-child(5) {
+        clear:both !important;
+    }
+    .dhx_cal_light, .dhx_cal_light select, .dhx_cal_ltext textarea {
+       float:left !important;
+       margin-left:5px !important;
+    }
+    .dhx_cal_lsection {
+        clear: both;
+        width:100% !important;
+        text-align:center !important;
+    }
+}
+
+@media (max-width: 700px){
+.ProductQuantityContainer .DetailContent.HasImage.HasProductPricing {width: 100%}
+.ProductQuantityContainer .QtyContainer {width: 100%}
+}
+
+@media screen and (max-width: 640px) {
+.dhx_cal_navline .dhx_cal_date {top:21px !important}
+.dhx_cal_prev_button, .dhx_cal_next_button {top: 50px !important}
+div#dhx_minical_icon {left: 0px !important}
+.dhx_cal_tab.dhx_cal_tab_first {top: 50px !important}
+.dhx_cal_tab.active {top: 50px !important}
+.dhx_cal_today_button {top: 50px !important}
+.BillingPage #Form_BillingPageForm div.field {width: 100%; float: none; display: flex;}
+.BillingPage #Form_BillingPageForm div.field .middleColumn {width: 60%;}
+.BillingPage #Form_BillingPageForm div.field label {width: 35%;}
+.BillingPage #Form_BillingPageForm div.field.date .middleColumn {width: 60%;}
+}
+
+@media only screen and (max-width: 600px) {
+    body.Page.NewBooking {
+        width: 96%;
+    }
+}
+.ListItem_ContinueShoppingButton {
+    text-align:right;
+}
+.ListItem_ContinueShoppingButton .action_btn {
+    color: #FFF;
+    background-color: #2ECC71;
+    background-image: none;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: normal;
+    border: none;
+    -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+    transition: border .25s linear, color .25s linear, background-color .25s linear;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.BillingPage #Form_BillingPageForm div.field.CompositeField {
+	width: 100%;
+	margin: 0;
+}
+
+.BillingPage #Form_BillingPageForm div.field.processinformationconsent {
+	width: 100%;
+}
+
+.BillingPage #Form_BillingPageForm div.field.processinformationconsent label {
+	width: 100%;
+	float: none;
+}
+.CustomerLoginHolder > ul {
+    display:none;
+}
+.BookingPageFilters div#ResourceFilterResourceID .ui-button-text,
+.BookingPageFilters div#RegionFilterRegionID .ui-button-text
+{
+    font-size: 12px !important;
+}
+#Form_FilterEventsForm_ResourceFilterDate {
+    width:100px !important;
+}
+.field.checkboxdropdownset div.checkboxdropdownset li {
+    list-style: none;
+    clear:both;
+}
+.field.checkboxdropdownset div.checkboxdropdownset ul {
+    padding: 0px;
+}
+#Form_FilterEventsForm_ResourceFilterResourceID, #Form_FilterEventsForm_RegionFilterRegionID {
+    width:280px;
+    margin-top:0px;
+}
+.BookingPageFilters .Actions {
+    float: right;
+    margin-top: -51px;
+}
+.val-1 input, .val-2 input {
+    display:none;
+}
+.val-1 label, .val-2 label {
+    font-weight: bold;
+    margin-left:24px;
+    display:block;
+    padding-top:5px;
+}
+
+#Form_FilterEventsForm_action_doFilterEvents, #Form_FilterEventsClear_action_doFilterEventsClear {
+	float:right;
+}
+
+#ResourceFilterResourceID .ui-button-text-icon-secondary {
+	overflow:hidden;
+	width:280px;
+}
+
+#RegionFilterRegionID .ui-button-text-icon-secondary {
+	overflow:hidden;
+	width:185px;
+}
+#Form_FilterEventsForm_ResourceFilterTime {
+	width:95px !important
+}
+#Form_FilterEventsClear_action_doFilterEventsClear {
+	margin-top:-32px;
+}
+
+/****** FILE: mysite/css/OrderSummaryBillingSuccessPage.css *****/
+div.billingsuccesspage-summary h2.main-header {
+	font-size: 200%;
+}
+
+div.billingsuccesspage-summary h2.larger {
+	font-size: 220%;
+}
+
+div.billingsuccesspage-summary table.billingsuccesspage-summary-table tr{
+	background: #CCC;
+}
+
+div.billingsuccesspage-summary table.billingsuccesspage-summary-table tr td{
+	border: none;
+	font-weight: bold;
+	padding: 10px;
+    text-align: left;
+}
+
+div.billingsuccesspage-summary table.billingsuccesspage-summary-table tr.billingsuccesspage-summary-totalpay {
+	font-size: 150%;
+}
+
+div.billingsuccesspage-summary table.billingsuccesspage-orderitems-table tr{
+}
+
+div.billingsuccesspage-summary table.billingsuccesspage-orderitems-table tr td{
+	border: none;
+	padding: 10px;
+}
+
+div.billingsuccesspage-summary table.billingsuccesspage-main-table,
+div.billingsuccesspage-summary table.billingsuccesspage-summary-table, 
+div.billingsuccesspage-summary table.billingsuccesspage-orderitems-table {
+    border: none;
+	width: 100%;
+}
+
+div.billingsuccesspage-summary table.billingsuccesspage-main-table tr {
+}
+
+div.billingsuccesspage-summary table.billingsuccesspage-main-table tr td {
+	border: none;
+	vertical-align: top;
+}
+
+div.billingsuccesspage-summary table.billingsuccesspage-food-table {
+	border: none;
+}
+
+div.billingsuccesspage-summary table.billingsuccesspage-food-table tr {
+}
+
+div.billingsuccesspage-summary table.billingsuccesspage-food-table tr td {
+	border: none;
+}
+
+/****** FILE: mysite/css/booking-page.css *****/
+input[type=checkbox] {
+    -moz-appearance:auto;
+}
+
+/* =Template Event Availability Form Field
+------------------------------------------ */
+#Form_BookingForm > fieldset > legend {
+    display: none;
+}
+
+#CustomMemberLogin_LoginForm > fieldset > legend {
+    display: none;
+}
+
+div.templatedeventproductavailability {
+	overflow: hidden;
+}
+
+div.templatedeventproductavailability > label.left {
+	font-size: 22px;
+	line-height: 30px;
+	margin-bottom: 10px;
+	font-family: "CamboRegular", Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	background: #ededed;
+	padding: 4px 7px;
+	border: 1px solid #d4d4d4;
+	display: block;
+}
+.bookingpage-summary-totals {
+    padding-top:10px;
+}
+
+div.templatedeventproductavailability .middleColumn {
+	overflow: hidden;
+}
+
+div.templatedeventproductavailability .middleColumn div.availabilityFields {
+	width: 33%;
+	float: left;
+}
+
+div.TemplatedEventProductAvailabilityFieldContainer {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+#Form_BookingForm_StartDate{
+	width:145px;
+}
+div.TemplatedEventProductAvailabilityFieldContainer select.atSelectClass {
+	width:155px;
+}
+
+div.TemplatedEventProductAvailabilityFieldContainer div#DateOfParty, div.templatedeventproductavailablilty div#atSelect {
+	width: 180px;
+}
+
+div.TemplatedEventProductAvailabilityFieldContainer div.availability_result {
+	float: right;
+	width: 66%;
+}
+div.TemplatedEventProductAvailabilityFieldContainer div.availability_result table {
+	width: 100%;
+	margin-bottom: 10px;
+}
+div.TemplatedEventProductAvailabilityFieldContainer div.availability_result table.availability-Grid {
+	/*width:560px;*/
+	border:0;
+	padding:0;
+}
+	div.TemplatedEventProductAvailabilityFieldContainer div.availability_result table.availability-Grid td,
+	div.TemplatedEventProductAvailabilityFieldContainer div.availability_result table.availability-Grid th {
+		width:8%;
+	}
+div.TemplatedEventProductAvailabilityFieldContainer div.availability_result .venue_availability_grid {
+
+}
+div.TemplatedEventProductAvailabilityFieldContainer div.availability_result .venue_availability_grid.pleasewait {
+	background: url(data:image/gif;base64,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) center no-repeat;
+}
+
+div.TemplatedEventProductAvailabilityFieldContainer div.availability_result .venue_availability_grid.pleasewait table {
+	visibility: hidden;
+}
+
+div.TemplatedEventProductAvailabilityFieldContainer div.availability_result table.availability-Grid tr {
+	background: #FFF;
+}
+
+div.TemplatedEventProductAvailabilityFieldContainer div.availability_result table.availability-Grid td {
+	padding:10px;
+}
+div.TemplatedEventProductAvailabilityFieldContainer div.availability_result table.availability-Grid th span {
+	display:block;
+	width:27px;
+	height:25px;
+	margin:0 auto;
+}
+div.TemplatedEventProductAvailabilityFieldContainer div.availability_result table.availability-Grid th.availability_grid-Red span {
+	background:#ed1b24;
+}
+div.TemplatedEventProductAvailabilityFieldContainer div.availability_result table.availability-Grid th.availability_grid-Amber span {
+	background:#ffc90d;
+}
+div.TemplatedEventProductAvailabilityFieldContainer div.availability_result table.availability-Grid th.availability_grid-Green span {
+	background:#23b14d;
+}
+
+div.TemplatedEventProductAvailabilityFieldContainer div.availability_result .legend-Grid {
+	margin:0;
+	padding:0;
+}
+	div.TemplatedEventProductAvailabilityFieldContainer div.availability_result .legend-Grid li {
+		list-style:none;
+		height:25px;
+		float:left;
+		width:33%;
+	}
+		div.TemplatedEventProductAvailabilityFieldContainer div.availability_result .legend-Grid .slot-available,
+		div.TemplatedEventProductAvailabilityFieldContainer div.availability_result .legend-Grid .slot-not-available,
+		div.TemplatedEventProductAvailabilityFieldContainer div.availability_result .legend-Grid .slot-partial-available {
+			width: 27px;
+			height: 25px;
+			padding: 0;
+			display:block;
+			float:left;
+			margin-right:10px;
+		}
+		div.TemplatedEventProductAvailabilityFieldContainer div.availability_result .legend-Grid .slot-available {
+			background:#23b14d;
+		}
+		div.TemplatedEventProductAvailabilityFieldContainer div.availability_result .legend-Grid .slot-not-available {
+			background:#ed1b24;
+		}
+		div.TemplatedEventProductAvailabilityFieldContainer div.availability_result .legend-Grid .slot-partial-available {
+			background:#ffc90d;
+		}
+
+
+
+/* = Product Quantity Field
+--------------------------- */
+.ProductQuantityContainer {
+	padding: 10px;
+	background-color: #FFF;
+	position:relative;
+	min-height:100px;
+    overflow: hidden;
+}
+	.ProductQuantityImageContent {
+		float: left;
+		width: 100px;
+		height: 100px;
+		overflow: hidden;
+		margin-right: 10px;
+	}
+	.ProductQuantityContainer .DetailContent {
+		width: 80%;
+        float: left;
+	}
+    .ProductQuantityContainer.product_pricing .DetailContent {
+        width: 58%;
+    }
+	.ProductQuantityContainer .DetailContent.HasImage {
+        width: 65%;
+	}
+	.ProductQuantityContainer .DetailContent.HasImage.HasProductPricing {
+	    width: 50%;
+	}
+		.ProductQuantityContainer .DetailContent .NameContent {
+			text-align:left;
+		}
+		.ProductQuantityContainer .DescriptionContent {
+			font-style: italic;
+			padding:0;
+			text-align: left;
+		}
+        .ProductQuantityContainer .Attributes {
+            margin: 0;
+            padding: 0;
+        }
+        .ProductQuantityContainer .Attributes li {
+                margin: 0;
+                padding: 0 10px;
+                list-style: none;
+                display: inline-block;
+                text-align: center;
+                width: 70px;
+                font-size: 12px;
+                vertical-align: middle;
+            }
+                .ProductQuantityContainer   .Attributes li img {
+                    display: block;
+                    margin: 0 auto;
+                }
+
+	.ProductQuantityContainer .QtyContainer {
+		width:15%;
+		text-align:center;
+		float: right;
+	}
+    .ProductQuantityContainer.product_pricing .QtyContainer {
+        width: 34%;
+    }
+		.ProductQuantityContainer .QtyField {}
+		.ProductQuantityContainer .PriceContainer {
+			font-weight: bold;
+			padding: 0 15px 0 15px;
+			font-size: 20px;
+		}
+		
+        .ProductQuantityContainer .tax-label {
+            font-size: 12px;
+        }
+
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	/* = Product Quantity Field
+	--------------------------- */
+	.ProductQuantityImageContent {
+		float: none;
+		width: 100px;
+		height: 100px;
+		margin: 0;
+	}
+	.ProductQuantityContainer.product_pricing .DetailContent,
+    .ProductQuantityContainer.product_pricing .DetailContent.HasImage {
+		margin:0;
+        width: 100%;
+	}
+	.ProductQuantityContainer .QtyContainer {
+		position:static;
+		text-align:left;
+	}
+		.ProductQuantityContainer .QtyField {text-align:left;}
+		.ProductQuantityContainer .PriceContainer {text-align:left;padding:0;}
+		.ProductQuantityContainer.product_pricing .QtyContainer {
+            display: block;
+		    float: none;
+            width: 100%;
+            clear: both;
+		}
+            .ProductQuantityContainer.product_pricing .QtyContainer table {
+                float: none;
+            }
+
+	/* =Template Event Availability Form Field
+	------------------------------------------ */
+	div.templatedeventproductavailability .middleColumn div.availabilityFields {
+		width: 100%;
+		float: none;
+	}
+	div.TemplatedEventProductAvailabilityFieldContainer div.availability_result {
+		float: none;
+		width: 100%;
+	}
+	div.TemplatedEventProductAvailabilityFieldContainer div.availability_result table.availability-Grid tr th:nth-child(2),
+	div.TemplatedEventProductAvailabilityFieldContainer div.availability_result table.availability-Grid tr th:nth-child(3),
+	div.TemplatedEventProductAvailabilityFieldContainer div.availability_result table.availability-Grid tr th:nth-child(4),
+	div.TemplatedEventProductAvailabilityFieldContainer div.availability_result table.availability-Grid tr th:nth-child(6),
+	div.TemplatedEventProductAvailabilityFieldContainer div.availability_result table.availability-Grid tr th:nth-child(7),
+	div.TemplatedEventProductAvailabilityFieldContainer div.availability_result table.availability-Grid tr th:nth-child(8){
+		display:none;
+	}
+
+	div.TemplatedEventProductAvailabilityFieldContainer div.availability_result .legend-Grid li {
+		list-style:none;
+		height:25px;
+		float:none;
+		width:100%;
+		display:block;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	/* =Template Event Availability Form Field
+	------------------------------------------ */
+	div.TemplatedEventProductAvailabilityFieldContainer div.availability_result .venue_availability_grid {
+
+	}
+	div.TemplatedEventProductAvailabilityFieldContainer div.availability_result .legend-Grid li {
+		float:none;
+		width:100%;
+		display:block;
+		margin-bottom:5px;
+		clear: both;
+	}
+	div.TemplatedEventProductAvailabilityFieldContainer div.availability_result table.availability-Grid tr th:nth-child(2),
+	div.TemplatedEventProductAvailabilityFieldContainer div.availability_result table.availability-Grid tr th:nth-child(3),
+	div.TemplatedEventProductAvailabilityFieldContainer div.availability_result table.availability-Grid tr th:nth-child(7),
+	div.TemplatedEventProductAvailabilityFieldContainer div.availability_result table.availability-Grid tr th:nth-child(8){
+		display:none;
+	}
+}
+#product-loading-image {
+    text-align: center;
+}
+.RequiredResourceProductMiddleFiled {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+.productname {
+    display: inline-block;
+    padding: 10px;
+    width: auto;
+}
+.product-header {
+    border: 5px solid #000;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.product-input {
+    text-align: center;
+}
+.product-input input.radio {
+    float: none;
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 940px) {
+
+}
+
+/**
+ * Upsell Fields
+ */
+.ProductEventUpsellField, .RelatedProductField {
+    border-bottom: solid 2px #ccc;
+}
+.ProductEventUpsellField .ProductEventUpsellFieldTable {
+    clear: both;
+    overflow: hidden;
+}
+.ProductEventUpsellField .ProductEventUpsellFieldTable table {
+/*    width: 100%;*/
+}
+.ProductEventUpsellField .days-header {
+    display:none;
+}
+.ProductEventUpsellField .ProductEventUpsellFieldTable table td {
+    padding: 5px;
+}
+.ProductEventUpsellField .product_description .desc h4 {
+    background: #f1f1f1;
+    padding-bottom: 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.ProductEventUpsellField .product_description .price {
+    padding-bottom: 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.QtyContainer td.label {
+    text-align: right;
+}
+
+.QtyContainer > table {
+    float: right;
+}
+
+
+.LiveBasket {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    border-left: solid 3px #7f7f7f;
+    background: #fff;
+    -webkit-transition: width 1s; /* Safari */
+    transition: width 1s;
+}
+    .LiveBasket--loading {
+        display: none;
+    }
+    .LiveBasket__content {
+        width: 300px;
+        overflow-x: hidden;
+		height: 100%;
+    }
+    .LiveBasket p {
+        margin: 10px;
+    }
+
+    .LiveBasket__toggle {
+        font-weight:normal;
+        color: #fff;
+        padding: 5px 15px;
+        position: absolute;
+        top: 50%;
+        left: -72px;
+        word-wrap: break-word;
+        width: 80px;
+        background: #0C9501;
+        cursor: pointer;
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+        border-radius: 0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        border: none;
+        line-height: normal;
+    }
+
+    .LiveBasket__toggle .icon {
+        margin-right: 5px;
+        display: inline-block;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+    }
+    .LiveBasket--collapsed .LiveBasket__toggle .icon {
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    }
+
+    .LiveBasket__heading {
+        font-size: 20px;
+        color: #fff;
+        background: #7f7f7f;
+        display: block;
+        padding: 20px 10px;
+    }
+.LiveBasket__mask {
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    text-align:center;
+}
+.LiveBasket__items {
+    margin: 0;
+    padding: 0;
+}
+.LiveBasket__items_item {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    border: solid 2px #7f7f7f;
+    background: #f1f1f1;
+    list-style: none;
+    box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.5);
+    position: relative;
+}
+.LiveBasket__items li strong {
+    display: block;
+}
+
+@keyframes anim-rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.LiveBasket__mask .icon {
+    display: inline-block;
+    font-size:4em;
+    height: 1em;
+    line-height: 1;
+    /*margin: .5em;*/
+    animation: anim-rotate 2s infinite linear;
+    color: #fff;
+    text-shadow: 0 0 .25em rgba(255,255,255, .3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+
+}
+button.LiveBasket__delete {
+    right: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: auto;
+    box-shadow: none;
+    padding: 0;
+    width: 40px;
+    min-width: 20px !important;
+    background: #7f7f7f;
+    color: #fff;
+    font-size: 20px;
+}
+.LiveBasket__loading_basket {
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    font-size: 14px;
+}
+.LiveBasket__loading_basket span {
+    animation: anim-rotate 2s infinite linear;
+}
+.LiveBasket__checkout, .LiveBasket__checkout:link, .LiveBasket__checkout:visited {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background: #2ECC71;
+    padding: 10px 20px;
+    /*border: solid 1px #2ECC71;*/
+    margin: 10px;
+    color: #fff;
+}
+
+
+.calendar {
+    width:100%;
+}
+.product-availability--multi div.field {
+    float: left;
+    width: 20%;
+}
+.MessagePopupCalendar {
+    font-size:20px !important;
+    /* width:450px;
+    height:300px; */
+}
+.MessagePopupCalendar ul {
+    padding-left: 0px !important;
+}
+.MessagePopupCalendar select {
+    width:250px;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:5px;
+
+}
+.MessagePopupCalendar ul li {
+    margin-bottom:10px;
+    list-style-type: none;
+    padding: 0px;
+}
+.dhtmlx-confirm-warning {
+    width:540px !important;
+}
+.dhtmlx_add_button > div, .dhtmlx_update_button > div {
+    background:#6494ec !important;
+    color:#FFF !important;
+}
+.dhtmlx_delete_event_button > div, .dhtmlx_delete_all_button  > div {
+    background:#f77171  !important;
+    color:#FFF !important;
+}
+.RoomLayoutUl  {
+    list-style-type: none;
+    display: table;
+    /*margin-left: auto;*/
+    margin-right: auto;
+    padding: 0px;
+}
+.RoomLayoutUl li {
+    float: left;
+    margin-left: 20px;
+    font-size: 12px;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.RoomLayoutHref {
+    position:relative !important;
+}
+.selectedRoomLayout {
+    position: absolute;
+    top: -62px;
+    left: 57px;
+    background: #36DC05;
+    border-radius: 15px;
+    padding: 3px;
+}
+.selectedRoomLayout i {
+    font-size: 17px;
+    color: #ffffff;
+    margin: 2px;
+}
+.RoomLayoutHeader, .OptioanlExtraHeader {
+    border-bottom: 1px solid #c1bcbc;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+
+.ProductEventUpsellFieldTable .spinner, input.spinnernumeric  {
+    width: 25px;
+    font-size: 12px;
+    background: none;
+    padding: 0px;
+    margin: 8px;
+    margin-right: 20px;
+    background-color: #FFF !important;
+    border: 0px !important;
+}
+.spinnernumeric .minus,.spinnernumeric .plus {
+    display:none;
+}
+.AvailabeSlotsRelatedProducts {
+    font-size:12px;
+    margin-bottom: 15px;
+}
+.ProductEventUpsellFieldTable input[disabled] {
+    color: #e0dfdf !important;
+}
+.ProductEventUpsellFieldTable table tr td {
+    width:120px !important;
+}
+.ProductEventUpsellFieldTable .AllDays tr td{
+    width:120px !important;
+}
+input.labelauty:checked + label {
+    background-color: #008000 !important;
+}
+.RoomLayoutUl li img {
+    width:70px;
+}
+.RoomLayoutUl li {
+    width:70px;
+}
+.RoomLayoutUl input.labelauty + label {
+    margin-left:15px;
+}
+.RoomLayoutSelect {
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    .RoomLayoutCheckBox {
+        display:none;
+    }
+    .RoomLayoutLi {
+        display:none;
+    }
+    .RoomLayoutSelect {
+        display:block;
+    }
+    .RoomLayoutSelect select {
+        width: 180px;
+    }
+    .MessagePopupCalendar select {
+        padding-top:7px;
+        padding-bottom:7px;
+    }
+
+}
+
+@media only screen and (max-height: 360px) {
+    .MessagePopupCalendar select {
+        padding-top:3px;
+        padding-bottom:3px;
+    }
+    .MessagePopupCalendar ul li {
+        font-size:12px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .RoomLayoutLi img {
+        width:65px;
+    }
+    .RoomLayoutUl li {
+        width:35px;
+    }
+    .dhtmlx-confirm-warning {
+        width:240px !important;
+    }
+
+
+}
+
+@media only screen and (max-width: 820px) {
+    .RoomLayoutLi img {
+        width:65px;
+    }
+    .RoomLayoutUl li {
+        width:55px;
+    }
+}
+

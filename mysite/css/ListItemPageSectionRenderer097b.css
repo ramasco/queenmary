@@ -1,0 +1,107 @@
+.Listing_Item {
+	text-align:left;
+	background: #f1f1f1;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	padding:10px;
+	margin:5px 0;
+    position:relative;
+	min-height:130px;
+}
+.EvenItem {
+    background: #EDEDED;
+}
+.OddItem {
+    background: #EDEDED;
+}
+	.ListItem_ImageContainer {
+		min-width:120px;
+		min-height: 120px;
+		position:absolute;
+		top:10px;
+		left:10px;
+	}
+	.ListItem_ImageContainer.NoImage {
+		background: #FFF url('../images/no-image.gif') no-repeat center;
+		background-size: 100% auto;
+	}
+	.ExtraMainImage_Selector {
+		margin:0;
+		padding:0;
+	}
+	
+	.ListItem_DescriptionContainer {
+		margin-left:140px;
+		margin-right:140px;
+		padding-left:10px;
+	}
+		.ListItem_DescriptionContainer h2 {
+			margin-top:0;
+		}
+        .ListItem_Item_Attributes {
+            margin: 0;
+            padding: 0;
+        }
+            .ListItem_Item_Attributes li {
+                margin: 0;
+                padding: 0 10px;
+                list-style: none;
+                display: inline-block;
+                text-align: center;
+                width: 70px;
+                font-size: 12px;
+                vertical-align: middle;
+            }
+                .ListItem_Item_Attributes li img {
+                    display: block;
+                    margin: 0 auto;
+                }
+	.ListItem_PriceContainer {
+		position:absolute;
+		right:10px;
+		top:10px;
+		width:120px;
+		text-align: center;
+	}
+	.ListItem_bookButton{
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+.ListItem_PriceContainer h3 {
+    color : #030bfc;
+    font-size: 15px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.ListItem_ImageContainer {
+		position:static;
+	}
+	.ExtraMainImage_Selector {
+		margin:0;
+		padding:0;
+	}
+
+	.ListItem_DescriptionContainer {
+		margin-left:0;
+		margin-right:0;
+	}
+
+	.ListItem_PriceContainer {
+		position:static;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 940px) {
+
+}

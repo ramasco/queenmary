@@ -1,0 +1,54 @@
+.ProcessSteps {
+	width: 100%;
+	display: flex;
+	padding: 20px 0;
+}
+.ProcessSteps__Current {
+	width: 24%;
+	font-weight: bold;
+	font-size: 20px;
+}
+.ProcessSteps__Step {
+	width: 19%;
+}
+.ProcessSteps__Number {
+	display: inline-block;
+	background: #E7B416;
+	width: 22px;
+	height: 22px;
+	border-radius: 11px;
+	text-align: center;
+	color: #fff;
+	line-height: 22px;
+	font-size: 12px;
+}
+.ProcessSteps__Step--active .ProcessSteps__Number {
+	background: #333;
+}
+.ProcessSteps__Step--completed .ProcessSteps__Number {
+	background: #2DC937;
+}
+.ProcessSteps__Label {
+	display: inline-block;
+	padding-left: 10px;
+}
+
+@media (max-width: 1000px) {
+	.ProcessSteps__Number{
+		display: block;
+		margin: 0 auto;
+	}
+	.ProcessSteps__Label {
+		display: block;
+		text-align: center;
+	}
+}
+
+@media (max-width: 480px) {
+	.ProcessSteps__Current {
+		width: 100%;
+	}
+	.ProcessSteps__Step {
+		display: none;
+	}
+}

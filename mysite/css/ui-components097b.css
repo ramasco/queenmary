@@ -1,0 +1,133 @@
+
+/**
+ * Alerts
+ */
+.Alert {
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+	.Alert__close, .cms .ss-ui-button.Alert__close {
+		float: right;
+		border: none;
+		background: none;
+		padding: 0;
+		min-width: 15px;
+		height: auto;
+		line-height: normal;
+		font-size: 20px;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+        cursor: pointer;
+	}
+        .Alert__close span.ui-button-text {
+            padding: 0;
+            line-height: normal;
+        }
+	.Alert p {
+		margin: 0;
+		padding: 0;
+	}
+.Alert--warning {
+	color: #8a6d3b;
+	background-color: #fcf8e3;
+	border-color: #faebcc;
+}
+	.Alert--warning p {
+		color: #8a6d3b;
+	}
+
+.Alert--notice {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+.Alert--notice p {
+    color: #8a6d3b;
+}
+.Alert--error {
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+}
+	.Alert--error p {
+		color: #a94442;
+	}
+.Alert--info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+    .Alert--info p {
+        color: #31708f;
+    }
+.Alert--centerText {
+    text-align: center;
+}
+
+/* NewAdminIframe Alert */
+
+.Alert--warning, #NewBookingIFrame .Alert--warning {
+    color: #fff !important;
+    background-color: #C25600 !important;
+    border-color: #222 !important;
+}
+
+.Alert--warning p, #NewBookingIFrame .Alert--warning p {color: #fff;}
+
+.Alert--warning a, #NewBookingIFrame .Alert--warning a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.newadminiframe-admin-booking {
+	font-size: 2rem;
+	text-decoration: underline;
+}
+
+.newadminiframe-you-are {
+	font-size: 1rem;
+}
+
+/**
+ * Accordion
+ */
+.Accordion {
+    border-left: solid 2px #e9ebed;
+    border-right: solid 2px #e9ebed;
+    margin: 20px 0;
+}
+.Accordion.Accordion--expanded, .Accordion.Accordion--start-expanded {
+    border-bottom: solid 2px #e9ebed;
+}
+.Accordion__title {
+    cursor: pointer;
+    background: #e9ebed;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
+}
+    .Accordion__title .icon {
+        font-size: 25px;
+        float: right;
+    }
+    .Accordion__title .icon-arrow-up5 {
+        display: none;
+    }
+    .Accordion--expanded .Accordion__title .icon-arrow-up5 {
+        display: block;
+    }
+    .Accordion--expanded .Accordion__title .icon-arrow-down5 {
+        display: none;
+    }
+.Accordion__content {
+    display: none;
+}
+.Accordion--start-expanded .Accordion__content {
+    display: block;
+}
+.Accordion--start-expanded table.Accordion__content {
+    display: table;
+}

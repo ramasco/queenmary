@@ -1,0 +1,824 @@
+.DeleteAvailabilityProductAvailability_Form  #TimeFrom,
+.DeleteAvailabilityProductAvailability_Form  #TimeTo,
+.DeleteAvailabilityProductAvailability_Form  #Location,
+.ui-dialog #customActionsDialog .DeleteAvailabilityProductAvailability_Form select {
+    width:80% !important;
+}
+.selectOptions {
+    display:none;
+    min-height: 350px;
+}
+#CreateEvents, #CreateResourceEvents,#AddAvailabilityProductAvailability,
+#DeleteAvailabilityProductAvailability, #CustomerGroupOperationCreate,
+#CreateNewRecord, #CreateStaffAvailability, #MergeCustomerData  {
+    color:#000 !important;
+}
+#customActionsDialog #GroupOperation {
+    margin-top:10px;
+    padding: 5px;
+    margin-bottom:10px;
+    margin-top:35px;
+}
+.CustomAction.disabled {
+    color:#d8d8d8;
+    cursor: default;
+}
+.CustomAction {
+    color:black;
+}
+
+#customActionsDialog .selectOptions {
+    display: block;
+    overflow: auto;
+    height: 495px;
+}
+
+.GroupOptions__Actions #CreateStaffAvailability {
+    color:#000 !important;
+}
+
+.GroupOptions__Actions {
+    position: relative;
+    margin-bottom: 0px !important;
+    float:right;
+}
+.GroupOptions__Actions button {
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
+}
+.GroupOptions__Actions button .icon {
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.GroupOptions__Actions button > span {
+    width: 97px;
+    text-align: right;
+}
+
+
+.GroupOptions__Actions ul {
+    position: absolute;
+    right: 0;
+    font-size: 13px;
+    list-style: none;
+    margin: 5px 0 0 0;
+    padding: 0px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    display: none;
+    z-index:10;
+    width:200px;
+}
+.GroupOptions__Actions ul li {
+    margin: 0;
+    display: block;
+    padding: 8px;
+    text-align: left;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.GroupOptions__Actions ul li:hover {
+    background: #FC4553;
+    color: #FFF;
+}
+.grid .grid-csv-button {
+    float:left;
+}
+#customActionsDialog {
+    display:none;
+    padding:10px;
+    margin-top: 20px;
+}
+input#Capacity {
+    width:100px !important;
+}
+.ui-dialog #customActionsDialog fieldset {
+    background-color: #ffffff;
+    border: 1px solid #d8d8d8 !important;
+    margin-bottom:10px;
+}
+
+.ui-dialog #customActionsDialog .htmlAJAXResult{
+    background: url(../images/loading.svg) center center no-repeat;
+    height:400px;
+    display: initial;
+}
+
+.ui-dialog #customActionsDialog fieldset .legend {
+    padding: 10px;
+    background: #f8f8f8;
+    border-bottom: 1px solid #bdbdbd;
+    font-size: 15px;
+    height:13px;
+}
+.legend_header {
+    float: left;
+    width: 49%;
+}
+.TotalEvents {
+    float: left;
+    width: 50%;
+    text-align:right;
+}
+.ui-dialog #customActionsDialog .padding {
+    padding:10px;
+}
+
+.ui-dialog {
+    background: #F0F3F4;
+    border: 0px !important;
+    border-radius: 1px !important;
+    overflow: visible;
+    padding: 3px !important;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.675);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.675);
+    min-width:350px;
+}
+
+.dialogcontnetloading {
+    background: url(../images/loading.svg) center center no-repeat  !important;
+}
+.ui-dialog #customActionsDialog .htmlAJAXResult fieldset {
+    border:0px !important;
+}
+
+.ui-dialog #customActionsDialog .GridFieldActionButton {
+    clear:both;
+    margin-left:10px;
+    margin-top:19px;
+    display:none;
+}
+
+.ui-dialog #customActionsDialog .field {
+    padding:10px;
+    padding-top: 0px !important;
+    padding-bottom: 5px;
+    border:0px !important;
+    box-shadow: 0px;
+    -webkit-box-shadow: 0px;
+    border-bottom:1px solid #bdbdbd;
+}
+.ui-dialog #customActionsDialog .field label.left {
+    padding:0px;
+    margin-top:5px;
+}
+.ui-dialog #customActionsDialog select {
+    padding:5px !important;
+    margin:0px  !important;
+    background: #FAFAFA  !important;
+    border: 1px solid #adadae  !important;
+    border-radius:4px !important;
+}
+.ui-dialog #customActionsDialog input {
+    border-radius: 0px;
+    background-image: none;
+    border-radius:4px;
+    padding: 5px
+}
+
+.ui-dialog #customActionsDialog .date input {
+    padding:5px;
+}
+.ui-dialog #customActionsDialog .time-select {
+    margin-top:0px !important;
+    margin-left:10px !important;
+}
+.ui-dialog #customActionsDialog .time {
+    padding:0px;
+}
+.ui-dialog #customActionsDialog .GridFieldActionButton {
+    margin-left:10px !important;
+    margin-bottom:10px;
+    display:none !important;
+}
+
+.ui-dialog-titlebar {
+    box-shadow: none !important;
+    margin: 10px !important;
+}
+/*.ui-dialog .ui-dialog-titlebar.ui-widget-header .ui-dialog-title {
+    position:relative;
+    width: 858px;
+    border: 1px solid #d8d8d8  !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #FFF;
+}*/
+/*EventSeriesOperationCreate_Form */
+
+
+
+.EventGroupOperationCreate_Form .field label.left,
+.EventSeriesOperationCreate_Form .field label.left
+{
+    width:auto !important;
+}
+
+.ui-dialog #customActionsDialog .EventSeriesOperationCreate_Form .middleColumn {
+    margin-left:135px;
+}
+
+.ui-dialog #customActionsDialog .EventSeriesOperationCreate_Form .middleColumn div[id^="EventDescription_"] div.middleColumn {
+	margin-left: 0px;
+}
+
+.ui-dialog #customActionsDialog .EventSeriesOperationCreate_Form div#ProductID {
+    float: left;
+    width: 49%;
+}
+.ui-dialog #customActionsDialog .EventSeriesOperationCreate_Form div#Capacity {
+    float: left;
+    clear:left;
+}
+.ui-dialog #customActionsDialog .EventSeriesOperationCreate_Form div#Code {
+    float: left;
+    clear:left;
+}
+.ui-dialog #customActionsDialog .EventSeriesOperationCreate_Form div#PublishDateTime {
+    clear: left;
+
+}
+.ui-dialog #customActionsDialog .EventSeriesOperationCreate_Form div#UnpublishDateTime {
+    clear: left;
+
+}
+
+.ui-dialog #customActionsDialog .EventSeriesOperationCreate_Form div#EventSeriesOperationCreateCalendar {
+    float: left;
+    top: 10px;
+    right: 26px;
+    position: absolute;
+}
+
+.ui-dialog #customActionsDialog .EventSeriesOperationCreate_Form .CompositeField:first-child {
+    clear:left;
+}
+
+.ui-dialog #customActionsDialog .EventSeriesOperationCreate_Form .CompositeField {
+    clear: left;
+    background: #e2e2e2;
+    /* margin-left: 10px; */
+    background-color: #ffffff;
+    border-top: 1px solid #d8d8d8 !important;
+    border-bottom: 1px solid #d8d8d8 !important;
+    padding-bottom: 10px;
+    width: 100%;
+    margin-left: 0px;
+    display: inline-table;
+    position:relative;
+    padding-left:0px;
+    padding-right: 0px;
+}
+.EventGroupOperationCreate_Form .ProductAndResourceDate {
+    margin:0px;
+}
+.hidden {
+    display:none !important;
+}
+.ui-dialog #customActionsDialog .EventSeriesOperationCreate_Form .CompositeField .col {
+    width:49%;
+    float:left;
+    margin:0px;
+    padding:0px;
+}
+.ui-dialog #customActionsDialog .EventSeriesOperationCreate_Form .datetime .middleColumn .field:first-child {
+    width:125px;
+}
+
+.ui-dialog #customActionsDialog .EventSeriesOperationCreate_Form .datetime .middleColumn .time {
+    width:80px;
+}
+.ui-dialog #customActionsDialog .EventSeriesOperationCreate_Form .datetime .middleColumn .middleColumn {
+    margin: 0; padding: 0; clear: none; float: left;
+}
+
+.ui-dialog #customActionsDialog .EventSeriesOperationCreate_Form .datetime .middleColumn .field {
+    margin: 0; border-bottom: none; box-shadow: none;
+}
+
+.ui-dialog #customActionsDialog .EventSeriesOperationCreate_Form .EventSeriesOperationCreateDiv h3 {
+    clear: both;
+    margin-bottom: 0;
+    padding-left: 10px;
+    background: #f8f8f8;
+    margin-top: 0px;
+    padding: 10px;
+}
+.ui-dialog #customActionsDialog .EventSeriesOperationCreate_Form .CompositeField .col label.left {
+    margin-left:10px;
+}
+
+.ui-dialog #customActionsDialog .EventSeriesOperationCreate_Form .CompositeField .col .middleColumn {
+    width:200px;
+}
+
+.ui-dialog #customActionsDialog .EventSeriesOperationCreate_Form .CompositeField .col .field {
+    padding-left:0px;
+}
+.removeEventButtons {
+    position: absolute;
+    top: 3px;
+    width: auto !important;
+    right: 4px;
+}
+.startTimeGroupOps {
+    width: 175px;
+}
+.startTimeGroupOps .chzn-container {
+    width:100px !important;
+}
+.startTimeGroupOps div.middleColumn {
+    width: 100px !important;
+    margin-left: 80px !important;
+}
+.endTimeGroupOps {
+    width: 100px !important;
+}
+.endTimeGroupOps  div.middleColumn {
+    width: 100px !important;
+    margin-left: 80px !important;
+}
+.StaffGroupOps {
+    width: 100px;
+    margin: 0px;
+}
+.StaffGroupOps .middleColumn {
+    width:100% !important;
+    margin-left: 80px !important;
+}
+.StaffGroupOps .chzn-container {
+    width:315px !important;
+    margin-left:0px;
+}
+.ResultAction .GridFieldMessage {
+    margin: 10px;
+    padding: 10px;
+}
+.ProductAndresource {
+    clear: both;
+}
+.ProductAndResource .field {
+    width: 33%;
+    float: left;
+}
+
+.ProductAndResource .chzn-container {
+    width:218px !important;
+}
+
+#ProductIDs .chzn-container {
+    width:200px !important;
+}
+
+.ProductAndResource div#Capacity {
+    width:185px !important;
+}
+
+.ProductAndResource .middleColumn {
+    margin-left:80px;
+}
+.ProductAndResourceDate {
+    clear: both;
+    width: 34%;
+    float: left;
+}
+.ProductAndResourceDate .middleColumn, .ProductAndResourceTimes .middleColumn {
+    margin-left:80px;
+}
+
+.ProductAndResourceDayOfWeek {
+    width: 60%;
+    float: left;
+}
+.ProductAndResourceDayOfWeek div:first-child{
+    margin-top: 5px;
+}
+#DayOfWeek label {
+    margin-top:10px;
+}
+
+div#DayOfWeek div.middleColumn {
+    margin-left: 90px;
+}
+
+ul#DayOfWeek li {
+    width:54px;
+}
+.Spacer {
+    clear:both;
+}
+.ProductAndResourceTimes {
+    clear:both;
+}
+.ProductAndResourceTimes ul#Times {
+    width:200px;
+}
+.ProductAndResourceTimes ul#Times li {
+    padding:0px !important;
+    border:0px !important;
+}
+
+.CustomFieldsetOption .CustomAcorrdionClass {
+    border-color: #c0c0c2;
+    margin-bottom: 0;
+    border-radius: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+    background:#f8f8f8 !important;
+}
+#EventGroupNew .middleColumn, #EventGroupExisting .middleColumn {
+    margin-left: 215px
+}
+div#EventGroupExisting {
+    height: 250px;
+}
+
+.CustomFieldsetOption .ui-accordion-content {
+    border: 0px;
+    border-bottom: 1px solid #c0c0c2;
+    border-radius: 0px;
+}
+input#EventGroupNew {
+    width:250px;
+}
+.CustomFieldsetOption div#Type {
+    clear:both;
+}
+#CustomFieldsetOption div#Type .middleColumn {
+    margin-left:80px;
+}
+#customActionsDialog .PublishTimeTitle, #customActionsDialog .unPublishTimeTitle {
+    width: 150px;
+    float: left;
+    padding-top:15px;
+}
+#customActionsDialog .PublishTimeFields, #customActionsDialog .unPublishTimeFields,
+#customActionsDialog .unPublishTimeFields .dropdown,
+#customActionsDialog .PublishTimeFields .dropdown
+{
+    float:left;
+}
+#customActionsDialog .PublishTimeFields .middleColumn, #customActionsDialog .unPublishTimeFields .middleColumn {
+    margin-left:85px;
+}
+
+#customActionsDialog .PublishTimeFields .middleColumn select, #customActionsDialog .unPublishTimeFields .middleColumn select {
+    width:150px;
+}
+
+#customActionsDialog .CompositeField {
+    clear:both;
+}
+#customActionsDialog .CompositeField:first-child {
+    border-bottom:1px solid #888;
+    display: inline-table;
+    width: 100%;
+}
+.ResultAction {
+    display:none;
+    clear:both;
+}
+.Exact .date label {
+    float: left;
+    display: block;
+    width: 176px !important;
+    padding: 8px 8px 8px 0  !important;
+    line-height: 16px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 white;
+}
+.Exact .date .middleColumn input {
+    width:200px;
+}
+
+.EventGroupOperationUpdateunPublishTimes_Form select,
+.EventGroupOperationUpdateunPublishTimes_Form input[type='text'],
+.EventGroupOperationUpdatePublishTimes_Form select,
+.EventGroupOperationUpdatePublishTimes_Form input[type='text']
+{
+    width:200px !important;
+}
+
+select#StartTime, select#EndTime {
+    width:200px !important;
+}
+
+.ui-dialog #customActionsDialog fieldset .ResultAction {
+    border:0px !important;
+}
+.ui-dialog #customActionsDialog fieldset .RelativeDay, .ui-dialog #customActionsDialog fieldset .Exact   {
+    border-left: 0px !important;
+    border-right: 0px !important;
+    border-bottom: 0px !important;
+}
+.EventGroupOperationUpdateunPublishTimes_Form fieldset legend, .EventGroupOperationUpdatePublishTimes_Form fieldset legend {
+    margin-left: 20px;
+    font-size: 14px;
+}
+.deleteWarningMessage {
+    padding: 10px;
+}
+.EventGroupOperationCreate_Form div#Type .middleColumn {
+    margin-left:80px !important;
+}
+.EventGroupOperationCreate_Form div#Type .middleColumn select {
+    width:219px !important;
+}
+.ui-widget-header .ui-icon-closethick {
+    background:url('../images/popup_close.png') !important;
+    width: 28px !important;
+    height: 28px !important;
+}
+.ui-widget-header a.ui-dialog-titlebar-close {
+    position: absolute;
+    top: -20px !important;
+    right: -29px !important;
+    width: 30px;
+    height: 30px;
+    z-index: 100000;
+}
+#customActionsDialog div#Times ul {
+    width:222px !important;
+}
+
+#customActionsDialog div#Times .mvtimesdropdown  {
+    width: 104px !important;
+}
+
+#customActionsDialog div#Times .StartTimes {
+    margin-right:10px !important;
+}
+#customActionsDialog div#EventGroupExisting_chzn {
+    width:250px !important;
+}
+
+#Form_EditForm_Product .right > a,
+#Form_EditForm_Event .right > a,
+#Form_EditForm_Members .right > a,
+#Form_EditForm_Purchaser .right > a,
+#Form_EditForm_Participant .right > a,
+#Form_EditForm_Resource .right > a {
+    float:left !important;
+    position:absolute;
+    margin-top: 40px;
+    margin-left: -6px;
+    clear: both;
+}
+#Form_EditForm_Product .ss-gridfield-buttonrow .right,
+#Form_EditForm_Event .ss-gridfield-buttonrow .right,
+#Form_EditForm_Members .ss-gridfield-buttonrow .right,
+#Form_EditForm_Purchaser .ss-gridfield-buttonrow .right,
+#Form_EditForm_Participant .ss-gridfield-buttonrow .right,
+#Form_EditForm_Resource .ss-gridfield-buttonrow .right {
+    height:85px !important;
+}
+/*#Form_EditForm_Purchaser .ss-gridfield-buttonrow .right,
+#Form_EditForm_Participant .ss-gridfield-buttonrow .right {
+    height:45px !important;
+}*/
+#CustomEmailText {
+    width:50%;
+}
+.DeleteAvailDays ul {
+    list-style: none;
+    padding:5px;
+}
+.DeleteAvailDays ul li {
+    float: left;
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.DeleteAvailabilityProductAvailability_Form .AllCheckbox, .AddAvailabilityProductAvailability_Form .AllCheckbox {
+    background: #f7f7f7;
+    border: 1px solid #999;
+}
+
+.DeleteAvailabilityProductAvailability_Form .margin, .AddAvailabilityProductAvailability_Form .margin {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.DeleteAvailabilityProductAvailability_Form .FromTime, .AddAvailabilityProductAvailability_Form .FromTime {
+    float:left;
+    width:230px;
+    margin-right:10px;
+}
+.DeleteAvailabilityProductAvailability_Form .ToTime, .AddAvailabilityProductAvailability_Form .ToTime {
+    float:left;
+    width:230px;
+}
+.DeleteAvailabilityProductAvailability_Form .LocationField, .AddAvailabilityProductAvailability_Form .LocationField {
+    float:left;
+    width:300px;
+    margin-right:10px;
+}
+.legend_2 {
+    clear:both;
+    margin-top: 40px;
+}
+.DeleteAvailabilityProductAvailability_Form .FromDate, .AddAvailabilityProductAvailability_Form .FromDate {
+    float:left;
+    width:45%;
+    margin-right:10px;
+}
+.DeleteAvailabilityProductAvailability_Form .ToDate, .AddAvailabilityProductAvailability_Form .ToDate {
+    float:left;
+    width:45%;
+}
+.text_2 {
+    width:80%; margin-left:10px
+}
+.bordered {
+    border:1px solid #c0c0c2;
+    background:#FFF;
+}
+.padding10 {
+    padding: 10px;
+}
+.hand {
+    cursor:pointer;
+}
+.checkboxSelected {
+    background:greenyellow;
+}
+.dateChecked {
+    color: red !important;
+}
+.LocationField label {
+    margin-right:10px;
+    width:80% !important;
+}
+.FromDate input, .ToDate input, .LocationField select {
+    width:80% !important;
+    margin-left:10px !important;
+}
+/* When not Checked */
+input.labelauty:not(:checked):not([disabled]) + label:hover
+{ background-color: #CDEFC7 !important; color: #666666 !important; }
+input.labelauty:not(:checked) + label > span.labelauty-checked-image
+{ display: none !important; }
+input.labelauty:not(:checked) + label > span.labelauty-checked
+{ display: none !important; }
+/* When Checked */
+input.labelauty:checked + label
+{ background-color: #0fa80f !important; color: #ffffff !important; }
+input.labelauty:checked:not([disabled]) + label:hover
+{ background-color: #e66e41 !important; color: #ffffff !important; }
+
+
+.OrderSummaryCMS .CustomStatuses ul {
+    margin: -1px 0 0 0 !important;
+    padding: 0px !important;
+}
+.OrderSummaryCMS .CustomStatuses button {
+    width: 202px !important;
+    text-align: right !important;
+}
+
+.OrderSummaryCMS .CustomStatuses button .ui-button-text {
+    padding-top: 7px !important;
+    padding-bottom: 5px !important;
+    padding-right: 0px !important;
+}
+.CustomStatuses input, .CustomStatuses select {
+    height: 30px;
+    border-radius: 5px;
+}
+
+.CustomLoading {
+    width:25px;
+    height:25px;
+    background: url(../images/ajax-loader.gif) center center no-repeat  !important;
+    display:none;
+}
+.CustomLabelsPreview {
+    padding:5px;
+    color:#FFF;
+}
+.CustomStatuses table.ss-gridfield-table tbody td {
+    width:none;
+}
+.AlertMessage {
+    font-size:16px;
+    color:red;
+    margin-top:15px;
+    line-height: initial;
+}
+.AddNewStatus {
+    color:#FFF !important;
+    background:green !important;
+    margin-top:3px;
+    margin-bottom:3px;
+    padding:5px !important;
+    display:inherit;
+}
+.ColorBox {
+    width:25px;
+    height:25px;
+    display:block;
+}
+.CustomStatusTable {
+    width:100%
+}
+.AddNewStatus:hover {
+    background:rgb(89, 214, 89) !important;
+}
+.AddNewStatus i {
+    margin-right:3px;
+}
+.CustomStatuses a {
+    text-decoration:none !important;
+    padding: 3px;
+    display: inline-table;
+    color: #999;
+}
+.NewRecord {
+    background-color:#fbf3e4 !important;
+}
+.WhiteTextColor {
+    color:#FFF !important;
+    border-bottom:1px solid #4f4f4f;
+    text-align: center !important;
+    text-shadow: none !important;
+    margin: 0px !important;
+}
+.OrderSummaryCMS .CustomStatuses ul {
+    margin: -1px 0 0 0 !important;
+    padding: 0px !important;
+}
+.OrderSummaryCMS .CustomStatuses button {
+    width: 202px !important;
+    text-align: right !important;
+}
+.OrderSummaryCMS .CustomStatuses button .ui-button-text {
+    padding-top: 7px !important;
+    padding-bottom: 5px !important;
+    padding-right: 0px !important;
+}
+.CustomStatuses input, .CustomStatuses select {
+    height: 30px;
+    border-radius: 5px;
+}
+.ClonedSelect {
+    display: inline-table;
+}
+.CustomStatusTable tr td {
+    cursor: auto !important;
+}
+.CustomStatusTable .even:hover {
+    background: #f1f1f1 !important;
+}
+.CustomStatusTable .odd:hover {
+    background: #FFF !important;
+}
+.InlineEditLabel,.InlineEditMainStatus {
+    color:rgb(0, 174, 255) !important;
+}
+.RoomLayout li {
+    float:left;
+    margin-right:5px;
+}
+
+.RoomLayout li .RoomLayoutHref {
+    position:relative;
+}
+.selectedRoomLayout {
+    position: absolute;
+    top: -62px;
+    left: 57px;
+    background: #36DC05;
+    border-radius: 15px;
+    padding: 3px;
+}
+.selectedRoomLayout i {
+    font-size: 17px;
+    color: #ffffff;
+    margin: 2px;
+}
+#ColorPickers ul li {
+    margin-bottom:5px;
+}
+input:required, select:required, textarea:required {
+    border: 1px solid red !important;
+}
+.notice-item {
+    background-color:#022E47 !important;
+    border-color:#FC4553 !important;
+    color:#ffffff;
+}
+.xdsoft_datetimepicker .xdsoft_datepicker.active+.xdsoft_timepicker {
+    margin-top:0px !important;
+}
+#customActionsDialog .CompositeField {
+    padding:0px !important;
+}
+
+

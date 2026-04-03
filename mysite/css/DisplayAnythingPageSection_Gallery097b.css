@@ -1,0 +1,11 @@
+#GalleryList {
+	margin:0;
+	padding:10px;
+}
+#GalleryList li{
+	width: auto;
+	height: auto;
+	display: none;
+	float: left;
+	padding: 0;
+}

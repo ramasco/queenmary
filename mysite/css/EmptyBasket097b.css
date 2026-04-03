@@ -1,0 +1,14 @@
+.emptyBasket-container {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.emptyBasket-icon {
+	font-size: 100px;
+}
+
+.emptyBasket-text {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}

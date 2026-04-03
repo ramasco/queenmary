@@ -1,0 +1,41 @@
+
+.mainWrapper {}
+.fullWidthColumn {width:100%;clear:both;}
+.contentBlock {clear:both;}
+
+/* Layout one, Layout two & Layout five */
+.layoutOne .leftColumn,
+.layoutTwo .leftColumn,
+.layoutFive .leftColumn {width: 68%;padding:1%;float: left;}
+.layoutOne .rightColumn,
+.layoutTwo .rightColumn,
+.layoutFive .rightColumn {width: 28%;padding:1%;float: right;}
+
+/* Layout three */
+.layoutThree .column50Percent {width:48%;padding:1%;float: left;}
+
+/* Layout four */
+.layoutFour .columnThird {width:31.3%;padding:1%;float: left;}
+
+
+
+@media (max-width: 480px) {
+	.layoutOne .pageSection,
+	.layoutTwo .pageSection,
+	.layoutThree .pageSection,
+	.layoutFour .pageSection,
+	.layoutFive .pageSection,
+	.layoutFive .leftColumn,
+	.layoutFive .rightColumn{
+		width:100%;
+		display:block;
+		clear:both;
+	}
+
+	.layoutOne .leftColumn,
+	.layoutTwo .leftColumn,
+	.layoutFive .leftColumn,
+	.layoutOne .rightColumn,
+	.layoutTwo .rightColumn,
+	.layoutFive .rightColumn {width:98%;float:none;}
+}

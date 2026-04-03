@@ -1,0 +1,56 @@
+.tabset {
+	display: block;
+	overflow: hidden;
+}
+
+.tabset ul {
+	border-bottom: 2px solid #ccc;
+	overflow: hidden;
+	margin: 0;
+	padding:0;
+	list-style: none;
+	list-style-type: none;
+}
+
+
+.tabset ul li {
+	float: left;
+	margin-right: 2px;
+	padding:0;
+	list-style: none;
+	list-style-type: none;
+	margin-bottom:0;
+}
+
+.tabset ul li a {
+	background: #ccc;
+	background: -moz-linear-gradient(220deg, transparent 10px, #ccc 10px);
+	background: -webkit-linear-gradient(220deg, transparent 10px, #ccc 10px);
+	background: -ms-linear-gradient(220deg, transparent 10px, #ccc 10px);
+	background: -o-linear-gradient(220deg, transparent 10px, #ccc 10px);
+	background: linear-gradient(220deg, transparent 10px, #ccc 10px);
+	text-shadow: 0 1px 0 rgba(0,0,0,.5);
+	text-shadow: none;
+	float: left;
+	font-weight: bold;
+	color: #555;
+	font: bold 16px/35px "Myriad Pro", arial;
+	height: 35px;
+	padding: 0 30px;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius:0 !important;
+	border:solid 1px #DAE6BA;
+}
+
+.tabset ul li a.active {
+	background: #E2E2E2;
+	background: -moz-linear-gradient(220deg, transparent 10px, #E2E2E2 10px);
+	background: -webkit-linear-gradient(220deg, transparent 10px, #E2E2E2 10px);
+	background: -ms-linear-gradient(220deg, transparent 10px, #E2E2E2 10px);
+	background: -o-linear-gradient(220deg, transparent 10px, #E2E2E2 10px);
+	background: linear-gradient(220deg, transparent 10px, #E2E2E2 10px);
+	text-shadow: none;
+	color: #333;
+	border:solid 1px #90C0D4;
+}

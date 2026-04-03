@@ -1,0 +1,18 @@
+.QuantitySelectContainer {
+}
+.PlusMinusNumericText {
+    vertical-align: top;
+    width: 50px;
+    text-align: center;
+}
+.typography img {
+    background: none;
+    border: 0px;
+    height: auto;
+}
+.minus {
+    cursor: pointer;
+}
+.plus {
+    cursor: pointer;
+}
