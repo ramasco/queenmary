@@ -1196,137 +1196,12 @@ input[name="home-tabs"] { display: none; }
     background: rgba(255,255,255,0.88);
 }
 
-/* === Move left menu to top (horizontal nav) === */
-#leftSidebar {
-    top: 48px;
-    left: 0;
-    width: 100%;
-    height: auto;
-    overflow-y: visible;
-    overflow-x: auto;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-.sidebar-logo {
-    display: none;
-}
-.sidebar-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-.sidebar-nav > li {
-    border-bottom: none;
-    border-right: 1px solid rgba(255,255,255,0.15);
-    position: relative;
-}
-.sidebar-nav > li > details > summary {
-    padding: 12px 14px;
-    white-space: nowrap;
-}
-.sidebar-nav > li > details > summary::after {
-    content: '▾';
-    margin-left: 5px;
-}
-.sidebar-nav > li > details[open] > summary::after {
-    transform: none;
-}
-.sidebar-nav > li > details > ul {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 200px;
-    max-height: 400px;
-    overflow-y: auto;
-    z-index: 20;
-    background: #005daa;
-    box-shadow: 2px 4px 8px rgba(0,0,0,0.25);
-}
-.sidebar-nav > li > details > ul > li > a {
-    padding: 8px 14px;
-    white-space: nowrap;
-}
-
-/* Adjust content: no left margin, top margin accounts for top-bar + nav (~48+48) */
-.mainSectionWrapper {
-    margin-left: 0;
-    margin-top: 96px;
-}
-
-/* Shift tab bar below top-bar + nav */
-.home-tab-bar {
-    top: 96px;
-    left: 0;
-}
-
-/* === Restore left sidebar === */
-#leftSidebar {
-    top: 48px;
-    left: 0;
-    width: 220px;
-    height: calc(100vh - 48px);
-    overflow-y: auto;
-    overflow-x: hidden;
-    box-shadow: 2px 0 6px rgba(0,0,0,0.2);
-}
-.sidebar-logo {
-    display: block;
-}
-.sidebar-nav {
-    display: block;
-    flex-direction: unset;
-    flex-wrap: unset;
-}
-.sidebar-nav > li {
-    border-bottom: 1px solid rgba(255,255,255,0.15);
-    border-right: none;
-    position: static;
-}
-.sidebar-nav > li > details > summary {
-    padding: 11px 14px;
-    white-space: normal;
-}
-.sidebar-nav > li > details > summary::after {
-    content: '▸';
-    margin-left: 0;
-}
-.sidebar-nav > li > details[open] > summary::after {
-    transform: rotate(90deg);
-}
-.sidebar-nav > li > details > ul {
-    position: static;
-    top: auto;
-    left: auto;
-    min-width: unset;
-    max-height: unset;
-    overflow-y: visible;
-    z-index: auto;
-    box-shadow: none;
-}
-.sidebar-nav > li > details > ul > li > a {
-    padding: 8px 14px 8px 22px;
-    white-space: normal;
-}
-.mainSectionWrapper {
-    margin-left: 220px;
-    margin-top: 48px;
-}
-.home-tab-bar {
-    top: 48px;
-    left: 220px;
-}
-
-/* Move sidebar to very top */
+/* === Desktop: left sidebar (default) === */
 #leftSidebar {
     top: 0;
     height: 100vh;
-}
-
-/* Raise sidebar above top bar so logo is visible */
-#leftSidebar {
     z-index: 9;
 }
-
-/* Shrink logo to fit top bar height */
 .sidebar-logo {
     padding: 4px 8px;
     height: 48px;
@@ -1338,6 +1213,107 @@ input[name="home-tabs"] { display: none; }
     max-height: 38px;
     max-width: 200px;
     width: auto;
+}
+.mainSectionWrapper {
+    margin-left: 220px;
+    margin-top: 48px;
+}
+.home-tab-bar {
+    top: 48px;
+    left: 220px;
+}
+
+/* === Mobile: move sidebar to top (vertical) === */
+@media (max-width: 880px) {
+    .bodyInner {
+        display: flex;
+        flex-direction: column;
+    }
+    .headerWrapper {
+        display: block !important;
+        order: 2;
+        position: static;
+        background: #005daa;
+        border-bottom: none;
+        width: 100%;
+    }
+    .headerWrapper .top-bar {
+        background: #005daa;
+        padding: 0;
+        text-align: left;
+    }
+    .headerWrapper .top-bar .wrapper {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .headerWrapper .top-menu {
+        display: block !important;
+        width: 100%;
+    }
+    .headerWrapper .top-menu li {
+        display: block !important;
+        float: none !important;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+    .headerWrapper .top-menu li a {
+        display: block !important;
+        padding: 11px 14px;
+        color: #fff !important;
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+        text-decoration: none;
+    }
+    .headerWrapper .social-menu {
+        display: none;
+    }
+    #leftSidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        overflow-y: visible;
+        overflow-x: hidden;
+        box-shadow: none;
+        z-index: 9;
+        order: 1;
+    }
+    .sidebar-logo {
+        display: none;
+    }
+    .sidebar-nav {
+        display: block;
+    }
+    .sidebar-nav > li {
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+        position: static;
+    }
+    .sidebar-nav > li > details > summary {
+        padding: 11px 14px;
+        white-space: normal;
+    }
+    .sidebar-nav > li > details > ul {
+        position: static;
+        min-width: unset;
+        max-height: unset;
+        overflow-y: visible;
+        z-index: auto;
+        box-shadow: none;
+    }
+    .sidebar-nav > li > details > ul > li > a {
+        padding: 8px 14px 8px 22px;
+        white-space: normal;
+    }
+    .mainSectionWrapper {
+        margin-left: 0;
+        margin-top: 0;
+        order: 3;
+    }
+    .home-tab-bar {
+        top: 0;
+        left: 0;
+    }
 }
 
 /* === Welcome Tab Responsive Layout === */
